@@ -1,21 +1,36 @@
-h1{
+.header{
 	color:black;
 	font-family: 'Lobster', cursive;
 	font-size:70px;
 	text-align:center;
-	text-decoration:underline
+	text-decoration:underline;
 }
 
-p{
+.subtitle{
 	font-family:'Montserrat', sans-serif;
 	font-size: 25px;
-	text-align:center
+	text-align:center;
+	color:black
 }
 
 body{
 	background-color:#white
 }
 
+h1{
+	font-family:Courier;
+	font-size:30px;
+	color:white;
+	text-decoration:none;
+	text-align:center;
+}
+
+p{
+	font-family:Courier;
+	font-size:15px;
+	color:white;
+	text-align:center;
+}
 
 .blogpost1 {
   background-color:#bc1a1a;
@@ -25,11 +40,6 @@ body{
 .blogpost2 {
   background-color:#153466;
 	padding:100px;
-}
-
-.readon2 {
-	background-color:#efe
-	padding:5px
 }
 
 .blogpost3 {
