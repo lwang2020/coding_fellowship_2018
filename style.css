@@ -1,0 +1,21 @@
+body{
+	background-color:#ddd;
+}
+
+.navigationBar{
+	background-color:blue;
+	color:white;
+	padding:5px;
+}
+
+.mainBody{
+	margin:10px;
+	background-color:white;
+	border:1px solid #bbb;
+	padding:10px;
+}
+
+.blogPostBody{
+	border-left:3px solid #ddd;
+	padding-left:20px;
+}
