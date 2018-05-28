@@ -1,5 +1,5 @@
 <?php
-include ('/Applications/MAMP/htdocs/include/PHPProject.php');
+include ('include/PHPProject.php');
 ?>
 
 <html>

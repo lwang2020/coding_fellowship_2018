@@ -1,5 +1,5 @@
 <?php
-include ('/Applications/MAMP/htdocs/include/PHPProject.php');
+include ('include/PHPProject.php');
 ?>
 
 
@@ -20,10 +20,11 @@ include ('/Applications/MAMP/htdocs/include/PHPProject.php');
 function PostABlock($blocknumber){
 	$sorter=getSorter();
 	$item = $sorter[$blocknumber];
-		echo "<div class='blogpost'; style='background-color:$item[BlockColor]'>";
-		echo "<h3>$item[ArticleTitle]</h3>";
-		echo "<p class='white'>$item[Subtitle]</p>";
-		echo "<p class='white'><a href=$item[ReadOn]>Read on</a></p>";
+		echo
+		"<div class='blogpost'; style='background-color:$item[BlockColor]'>
+		<h3>$item[ArticleTitle]</h3>
+		<p class='white'>$item[Subtitle]</p>
+		<p class='white'><a href=$item[ReadOn]>Read on</a></p>";
 }
 
 PostABlock('3');

@@ -1,5 +1,5 @@
 <?php
-include ('/Applications/MAMP/htdocs/include/SQLProject.php');
+include ('include/SQLProject.php');
 ?>
 
 
