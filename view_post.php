@@ -1,7 +1,6 @@
 <?php
-include ('/include/PHPProject.php');
- ?>
-
+include ('/Applications/MAMP/htdocs/include/PHPProject.php');
+?>
 
 <html>
 
@@ -9,17 +8,19 @@ include ('/include/PHPProject.php');
 		<title> View Blog Posts </title>
 		<link rel='stylesheet' href='maindesign.css' />
 	</head>
+
 	<body>
+		<?php
+			$sorter=getSorter();
+			$retrieve = $sorter[$_REQUEST['postId']];
 
-<?php
+			//Title
+			echo "<h1 class='titleformat'>$retrieve[Title]</h1>";
+			//Picture
+			echo $retrieve['Pic'];
+			//Paragraph
+			echo "<p>$retrieve[Body]</p>";
 
-
-
-echo $sorter[$_REQUEST['postId']]['Title'];
-echo $sorter[$_REQUEST['postId']]['Pic'];
-echo $sorter[$_REQUEST['postId']]['Body'];
-
-
-?>
+		?>
 	</body>
 </html>
