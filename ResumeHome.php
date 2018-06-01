@@ -14,7 +14,14 @@ include ('include/include_all.php');
 		<h1 class='header'> Lindsay's Blog </h1>
 		<h2 class='subtitle'>WORDS FROM A GIRL LEARNING HOW TO CODE </h1>
 
+		<div class="topnav">
+			<a class="active" href="#home">Home</a>
+			<a href="#news">News</a>
+			<a href="#contact">Contact</a>
+			<a href="#about">About</a>
+		</div>
 <?php
+
 
 Block(4);
 Block(5);
