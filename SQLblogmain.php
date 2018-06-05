@@ -21,6 +21,5 @@ Block(5);
 Block(6);
 
 ?>
-
 	</body>
 </html>

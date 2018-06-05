@@ -30,7 +30,7 @@ echo "
 		    </td>
 		    <td>";
 
-RepopulateName();
+Repopulate('Name');
 
 echo "
 		    </td>
@@ -42,7 +42,7 @@ echo "
 		    </td>
 		    <td>";
 
-RepopulatePhone();
+Repopulate('Phone');
 
 echo "
 		    </td>
@@ -52,11 +52,11 @@ echo "
 
 		Position:
 			<select name='Position'>
-		    <option value='Fellow'>Coding fellow</option>
-		    <option value='DevIntern'>Developer intern</option>
-		    <option value='CrmcIntern'>CRM coach intern</option>
-		    <option value='Dev'>Full-time developer</option>
-		    <option value='Crmc'>Full-time CRM coach</option>
+		    <option value='Pupper'>Pupper</option>
+		    <option value='Yapper'>Yapper</option>
+		    <option value='Woofer'>Woofer</option>
+		    <option value='Doggo'>Doggo</option>
+		    <option value='Boofer'>Boofer</option>
 			</select>
 		<br/><br/>
 		<input type='submit' name='JobApplication' value='Submit your application'/>

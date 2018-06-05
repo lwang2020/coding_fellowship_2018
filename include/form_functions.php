@@ -1,6 +1,5 @@
 <?php
 
-
 function ValidateFormField(){
 	global $Errors;
 	if ((trim($_REQUEST['NameBlank']) == '') or (strlen($_REQUEST['NameBlank']) < 3)){
@@ -11,17 +10,31 @@ function ValidateFormField(){
 	}
 }
 
+function Repopulate($info){
+	global $Errors;
+	if($info=='Name' && isset($_REQUEST['JobApplication']) && sizeof($Errors)>0 && strlen($_REQUEST['NameBlank']) > 0){
+		echo "<input type='text' name='NameBlank' value = $_REQUEST[NameBlank] >";
+	}
+	elseif ($info == 'Name'){
+		echo "<input type='text' name='NameBlank'>";
+	}
+
+	if($info=='Phone' && isset($_REQUEST['JobApplication']) && sizeof($Errors)>0 && strlen($_REQUEST['PhoneBlank']) > 0){
+		echo "<input type='text' name='PhoneBlank' value = $_REQUEST[PhoneBlank] >";
+	}
+	elseif ($info=='Phone'){
+		echo "<input type='text' name='PhoneBlank'>";
+	}
+}
+
 function SubmitApplication($Name, $Phone, $Position){
 		$result = dbQuery("
 			INSERT INTO JobApplicants(Name, PhoneNumber, Position)
 			VALUES('$Name', '$Phone', '$Position')
 		")->fetch();
-		die("
-			<h1> $Name just applied </h1>
-			<p> They applied for the $Position position. You can reach them at $Phone </p>
-			");
+		header("Location: http://localhost:8888/form_success_page.php");
+		exit();
 }
-
 
 function TextField(){
 	global $Errors;
@@ -35,22 +48,11 @@ function TextField(){
 		}
 }
 
-function RepopulateName(){
-	global $Errors;
-	if (isset($_REQUEST['JobApplication']) && sizeof($Errors) > 0){
-		echo "<input type='text' name='NameBlank' value = $_REQUEST[NameBlank] >";
-	}
-	else{
-		echo "<input type='text' name='NameBlank'>";
-	}
-}
-
-function RepopulatePhone(){
-	global $Errors;
-	if (isset($_REQUEST['JobApplication']) && sizeof($Errors) > 0){
-		echo "<input type='text' name='PhoneBlank' value = $_REQUEST[PhoneBlank] >";
-	}
-	else{
-		echo "<input type='text' name='PhoneBlank'>";
-	}
+function SuccessfulMessage($info){
+	$result = dbQuery("
+		SELECT Name, PhoneNumber, Position
+		FROM JobApplicants
+		WHERE id=(SELECT MAX(id) FROM JobApplicants)
+		")->fetch();
+	return $result;
 }
