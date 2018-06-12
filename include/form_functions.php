@@ -12,18 +12,11 @@ function ValidateFormField(){
 
 function Repopulate($info){
 	global $Errors;
-	if($info=='Name' && isset($_REQUEST['JobApplication']) && sizeof($Errors)>0 && strlen($_REQUEST['NameBlank']) > 0){
-		echo "<input type='text' name='NameBlank' value = $_REQUEST[NameBlank] >";
+	if(isset($_REQUEST['JobApplication']) && sizeof($Errors)>0 && strlen($_REQUEST[$info]) > 0){
+		echo "<input type='text' name=$info value = $_REQUEST[$info] >";
 	}
-	elseif ($info == 'Name'){
-		echo "<input type='text' name='NameBlank'>";
-	}
-
-	if($info=='Phone' && isset($_REQUEST['JobApplication']) && sizeof($Errors)>0 && strlen($_REQUEST['PhoneBlank']) > 0){
-		echo "<input type='text' name='PhoneBlank' value = $_REQUEST[PhoneBlank] >";
-	}
-	elseif ($info=='Phone'){
-		echo "<input type='text' name='PhoneBlank'>";
+	else{
+		echo "<input type='text' name=$info>";
 	}
 }
 

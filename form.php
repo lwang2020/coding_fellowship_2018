@@ -30,7 +30,7 @@ echo "
 		    </td>
 		    <td>";
 
-Repopulate('Name');
+Repopulate('NameBlank');
 
 echo "
 		    </td>
@@ -42,7 +42,7 @@ echo "
 		    </td>
 		    <td>";
 
-Repopulate('Phone');
+Repopulate('PhoneBlank');
 
 echo "
 		    </td>

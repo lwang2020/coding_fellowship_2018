@@ -21,61 +21,57 @@ Block(4);
 Block(5);
 Block(6);
 
+
 echo "
-	<h1> Submit a comment </h1>
+	<h1 class='SubmitAComment'> Submit a comment </h1>
 	<form action='' method 'post'>
-		<table>
+		<table class='SubmitForm'>
 		  <tr>
 		    <td>
 		      Name:
 		    </td>
-		    <td>
-					<input type='text' name='NameField'>
-		    </td>
+		    <td>";
+					RepopulateComments('NameField');
+echo
+		    "</td>
 		  </tr>
 		  <tr>
 		    <td>
 		      Email:
 		    </td>
-		    <td>
-					<input type='text' name='EmailField'>
-		    </td>
+		    <td>";
+					RepopulateComments('EmailField');
+echo
+				"</td>
 		  </tr>
-		<tr>
-			<td>
-				Comment:
-			</td>
-			<td>
-				<input type='text' name='CommentField' class='CommentField'>
-			</td>
-		</tr>
+			<tr>
+				<td>
+					Comment:
+				</td>
+				<td>";
+					RepopulateComments('CommentField');
+echo
+				"</td>
+			</tr>
 	</table>
-		<br/><br/>
-		<input type='submit' name='submitComment' value='Submit'/>
+		<br/>
+		<input class='SubmitButton' input type='submit' name='submitComment' value='Submit'/>
 	</form>
 ";
 
-function SubmitComment($Name, $Email, $Comment){
-		$result = dbQuery("
-			INSERT INTO BlogComments(Name, Email, Comment)
-			VALUES('$Name', '$Email', '$Comment')
-		")->fetch();
-}
+$DisplayComment = DisplayComment();
 
-if(isset($_REQUEST['submitComment'])){
-		SubmitComment(
-				$_REQUEST['NameField'],
-				$_REQUEST['EmailField'],
-				$_REQUEST['CommentField']
-		);
-}
-
-function DisplayComment(){
-	*START HERE*****
-}
+echo "<div>";
 
 
+for($a=0;$a<10;$a++){
+			echo
+			"<br> <br><p class='CommenterName'> ".$DisplayComment[$a]['Name']." commented:</p>";
+			echo
+			"<p class='CommenterComment'>".$DisplayComment[$a]['Comment']."</p> <br> <br>";
+		}
 
+echo "</div>";
 
 		?>
 	</body>
