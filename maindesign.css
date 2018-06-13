@@ -33,7 +33,10 @@ h3{
 }
 
 .blogpost{
-	padding:100px;
+	padding:50px;
+	overflow:hidden;
+	margin-top:auto;
+	margin-bottom:auto;
 }
 
 .titleformat{
@@ -68,4 +71,87 @@ p{
 	font-family:Courier;
 	font-size:15px;
 	color:black;
+}
+
+.SubmitAComment{
+	font-family:Courier;
+	font-size:30px;
+	color:black;
+	text-align: center;
+}
+
+.SubmitForm{
+	font-family:Courier;
+	font-size:15px;
+	color:black;
+	text-align: center;
+	margin:auto;
+}
+
+.SubmitButton{
+	margin-left:50%;
+	margin-right:50%;
+	font-family:Courier;
+}
+
+.CommenterName{
+	font-family:Courier;
+	font-weight: bold;
+	font-size:15px;
+	color:black;
+	text-decoration:
+}
+
+.CommenterComment{
+	font-family:Courier;
+	font-size:15px;
+	color:black;
+}
+
+.ErrorMessage{
+	font-family:Arial;
+	font-size:80px;
+	color:#f20000;
+	text-align:center;
+	margin:auto;
+}
+
+.textbox{
+	height:30px;
+	width: 500px;
+}
+
+.tag{
+	text-align: right;
+	font-family: Courier;
+	font-size: 15px;
+	background-color:#bc1a1a;
+	color:white;
+}
+.tagtitle{
+	text-align: right;
+	font-family: Courier;
+	font-size: 20px;
+	background-color:#153466;
+	color:white;
+}
+
+a {
+	color:white;
+}
+
+.Home{
+	color: #bc1a1a;
+}
+
+.BigTag {
+	color: #153466;
+	text-align:center;
+	font-size: 30px;
+}
+
+.LinkToBlog {
+	color: black;
+	font-size: 20px;
+
 }
