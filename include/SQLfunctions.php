@@ -15,7 +15,7 @@ function Block($blogpostId){
 		"<div class='blogpost'; style='background-color:$try[BlockColor]'>
 		<h3>$try[BlockTitle]</h3>
 		<p class='white'>$try[BlockSubtitle]</p>
-		<p class='white'><a href=$try[ReadOn]>Read on</a></p>
+		<p class='white'><a href=$try[ReadOn] class=taglinks>Read on</a></p>
 		</div>";
 }
 

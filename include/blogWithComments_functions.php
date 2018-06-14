@@ -60,7 +60,6 @@ function DisplayComment(){
 }
 
 
-
 function JoinTables(){
 	$result = dbQuery("
 		SELECT Blogposts.BlogpostId, Tags.BlogpostId, Tags.TagId,TheActualTags.TagId, TheActualTags.Tag

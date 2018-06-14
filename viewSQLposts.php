@@ -36,6 +36,6 @@ echo "<p class=tagtitle>Tags:</p>";
 
 for($i=0;$i<sizeof($JoinTables);$i++){
 	if ($JoinTables[$i]['BlogpostId']==$_REQUEST['postId']){
-		echo "<p class = tag ><a href=viewTags.php?tagID=".$JoinTables[$i]['TagId'].">".$JoinTables[$i]['Tag']."</a></p>";
+		echo "<p class = tag ><a href=viewTags.php?tagID=".$JoinTables[$i]['TagId']." class=taglinks>".$JoinTables[$i]['Tag']."</a></p>";
 	}
 }
