@@ -1,7 +1,6 @@
 <?php
-include ('include/SQLProject.php');
+include ('include/include_all.php');
 ?>
-
 
 <html>
 
@@ -17,21 +16,10 @@ include ('include/SQLProject.php');
 
 <?php
 
-function PostABlock($blocknumber){
-	$sorter=getSorter();
-	$item = $sorter[$blocknumber];
-		echo
-		"<div class='blogpost'; style='background-color:$item[BlockColor]'>
-		<h3>$item[ArticleTitle]</h3>
-		<p class='white'>$item[Subtitle]</p>
-		<p class='white'><a href=$item[ReadOn]>Read on</a></p>";
-}
-
-PostABlock('3');
-PostABlock('4');
-PostABlock('5');
+Block(4);
+Block(5);
+Block(6);
 
 ?>
-
 	</body>
 </html>
