@@ -12,8 +12,8 @@ function Fade(){
 	$('.FadeMeIn').fadeIn();
 }
 
-
 </script>
+
 
 <!--TOGGLE BOX BUTTONS-->
 
