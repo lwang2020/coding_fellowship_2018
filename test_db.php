@@ -1,12 +1,9 @@
 <?php
-
-include('config/config.php');
-include('include/db_query.php');
-
+include ('include/include_all.php');
+?>
 
 
-
-
+<?php
 //Function 1: this gets all the items in a multi-tiered array
 function GetAllInventoryItems(){
 	$result = dbQuery("
@@ -24,7 +21,6 @@ function GetAnInventoryItem($inventoryId){
 		FROM inventory
 		WHERE inventoryId = $inventoryId
 		")->fetch();
-
 	return $result;
 }
 
@@ -39,15 +35,8 @@ function InsertInventoryItem($name, $description, $category){
 //Let's make this the call area:
 $allInventoryItems = GetAnInventoryItem(3);
 
-//This part says, make everything visible, and make it pretty
-echo "<pre>";
-var_dump($allInventoryItems);
-echo "</pre>";
-
-
 
 /*
-
 Here's an example of us using Function 3:
 
 InsertInventoryItem ('Grapefruit', 'I like the red kind', 'Produce');
