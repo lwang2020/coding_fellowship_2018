@@ -1,5 +1,7 @@
 
-
+body {
+	overflow: hidden;
+}
 
 
 /* Makes the glint fade in and out */
@@ -12,14 +14,11 @@
 	transition: $element 0.15s ease-in-out;
 }
 
-
-
 img {
 
-
 /* sizing */
-height: 500px;
-width: 500px;
+height: 600px;
+width: 600px;
 padding:none;
 
 /*  centering */
@@ -27,16 +26,14 @@ padding:none;
 	text-align: center;
 	z-index: 0;
 	left: 50%;
-	top: 50%;
+	top: 40%;
 	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
-
 	-moz-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 	background: rgba(0,0,0,0);
 	@include fade-transition(background);
-
 	&:hover {
 		background: rgba(0,0,0,0);
 	}
@@ -44,6 +41,7 @@ padding:none;
 
 
 i {
+
 /*   positioning */
 		position:absolute;
 		opacity: 0;
@@ -54,7 +52,6 @@ i {
 /*   gradient   */
 		background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.03) 1%, rgba(255,255,255,0.6) 30%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0.85) 70%, rgba(255,255,255,0.85) 71%, rgba(255,255,255,0) 100%); /* FF3.6+ */
 		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(1%,rgba(255,255,255,0.03)), color-stop(30%,rgba(255,255,255,0.85)), color-stop(50%,rgba(255,255,255,0.85)), color-stop(70%,rgba(255,255,255,0.85)), color-stop(71%,rgba(255,255,255,0.85)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-
 		background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
 		background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
 		background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.03) 1%,rgba(255,255,255,0.6) 30%,rgba(255,255,255,0.85) 50%,rgba(255,255,255,0.85) 70%,rgba(255,255,255,0.85) 71%,rgba(255,255,255,0) 100%); /* IE10+ */
@@ -65,23 +62,21 @@ i {
     play around with the width, skew and gradient to get different effects
   */
 		width: 15%;
-		height: 43%;
+		height: 300px;
      transform: skew(-40deg,0deg);
-		-webkit-transform: skew(-40deg,0deg);
-
+			-webkit-transform: skew(-40deg,0deg);
      -moz-transform: skew(-40deg,0deg);
      -ms-transform: skew(-40deg,0deg);
      -o-transform: skew(-40deg,0deg);
 
 
 /*  animating it  */
-     animation: move 2s;
-		animation-iteration-count: infinite;
-		animation-delay: 0s;
-		-webkit-animation: move 2s;
-		-webkit-animation-iteration-count: infinite;
-		-webkit-animation-delay: 0s;
-
+animation: move 2s;
+animation-iteration-count: infinite;
+animation-delay: 0s;
+-webkit-animation: move 2s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-delay: 0s;
 		-moz-transform: skew(-10deg,0deg);
 		-moz-animation: move 2s;
 		-moz-animation-iteration-count: infinite;
@@ -95,27 +90,27 @@ i {
 		-o-animation-iteration-count: infinite;
 		-o-animation-delay: 1s;
 
+
 /* making the animation paused at first */
 		animation-play-state: paused;
 		-webkit-animation-play-state: paused;
-
+		-moz-animation-play-state: paused;
+		-o-animation-play-state: paused;
 	}
 
 
 .laptop {
 	background-color: #4286f4;
 	padding: none;
-
-
 }
 
 .laptop:hover i {
-		 /* Toggle our animation play state to running when we are hovering over our sticker */
+		 /* Toggle our animation play state to running when we are hovering over the image */
 	animation-play-state: running;
 	-webkit-animation-play-state: running;
 }
 
-/*  */
+/* The animation */
 @keyframes move {
 	0%  { left: 10%; opacity: 0; }
 	5% {opacity: 0.0}
