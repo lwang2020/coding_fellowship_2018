@@ -1,53 +1,4 @@
-
-.NavBar {
-    background-color:none;
-    overflow: auto;
-		text-align: center;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    font-size: 20px;
-		font-family: 'Raleway', sans-serif;
-		border-top: 3px #353333 solid;
-		border-bottom: 3px #353333 solid;
-}
-
-.NavBar a {
-    background-color: none;
-    color: #353333;
-		text-decoration: none;
-		overflow: hidden;
-}
-
-.NavBar a:hover {
-	background-color: none;
-	color: #989aa0;
-}
-
-.page-wrap {
-  margin-bottom: 50px;
-}
-
-.link {
-	margin-left: 30px;
-	margin-right: 30px;
-	overflow: hidden;
-}
-
-.homeText {
-	color: black;
-	text-align:left;
-	font-size: 20px;
-	font-family: 'Raleway', sans-serif;
-}
-
-blockquote {
-	color: black;
-	text-align:left;
-	font-size: 20px;
-	font-family: 'Raleway', sans-serif;
-}
-
-.PageTitle {
+.Title {
 	color: #353333;
 	z-index: 1;
 	font-size: 50px;
@@ -61,14 +12,14 @@ blockquote {
 
 .greenBox {
 	background-color: #d5edc7;
-	height: 400px;
+	height: 300px;
 	z-index: 0;
 	position: relative;
 	padding: 30px;
 }
 
 
-.pageContent {
+.content {
 	position: absolute;
 	z-index: 2;
 	width: 600px;
@@ -80,7 +31,7 @@ blockquote {
 }
 
 
-.pageFooter {
+.footer {
 	top: 600px;
 	position: relative;
 	width: auto;
@@ -138,6 +89,7 @@ blockquote {
 	letter-spacing: 2px;
 	font-weight: lighter;
 	position: relative;
+/*	top:750px; */
 	display: none;
 }
 
@@ -149,6 +101,7 @@ blockquote {
 	letter-spacing: 2px;
 	font-weight: lighter;
 	position: relative;
+/*	top:850px; */
 	display: none;
 }
 

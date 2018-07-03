@@ -1,7 +1,7 @@
 <?php
 include ('include/ResumeInclude.php');
 ?>
- 
+
 <html>
 
 	<head>
@@ -14,11 +14,11 @@ include ('include/ResumeInclude.php');
 		<div class="page-wrap">
 			<h1 class='header'> Lindsay's Resume </h1>
 				<h2 class='subtitle'>hire me pls </h1>
-					<p><a href= "4funccalc.php" class='firstObject'> First Object </a> </p>
-					<p><a href= "4funccalc.php" class='secondObject'> Second Object </a> </p>
-					<p><a href= "4funccalc.php" class='thirdObject'> Third Object </a> </p>
-					<p><a href= "4funccalc.php" class='fourthObject'> Fourth Object </a> </p>
-					<p><a href= "4funccalc.php" class='fifthObject'> Fifth Object </a> </p>
+					<p class = "homeText"><a href= "4funccalc.php" class='firstObject'> First Object </a> </p>
+					<p class = "homeText"><a href= "4funccalc.php" class='secondObject'> Second Object </a> </p>
+					<p class = "homeText"><a href= "4funccalc.php" class='thirdObject'> Third Object </a> </p>
+					<p class = "homeText"><a href= "4funccalc.php" class='fourthObject'> Fourth Object </a> </p>
+					<p class = "homeText"><a href= "4funccalc.php" class='fifthObject'> Fifth Object </a> </p>
 		</div>
 
 		<footer class='NavBar'>
