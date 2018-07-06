@@ -76,6 +76,48 @@
 </div>
 
 
+<p style= "font-weight: bold"> Director of Marketing - Washington University Amateurs A Cappella </p>
+	<blockquote>
+		• In charge of marketing and PR, including social media and designing print media
+		• Delegates and handles responsibilities given by the Group Coordinator
+		• Event photographer
+	</blockquote>
+<p style= "font-weight: bold"> Social Media Coordinator - Washington University A Cappella Advisory Council (ACAC) </p>
+	<blockquote>
+		• Established executive decisions on events for the WashU a cappella community, including We Sing for Ice Cream and auditions
+		• Designed advertisements and social media posters
+		• Used Facebook, Instagram, Twitter, email and print media to
+		communicate to new students and promote event
+	</blockquote>
+</div>
+
+
+<p style= 'font-weight: bold'> Less Annoying CRM - Coding Fellow </p>
+	<blockquote>
+		• Learned CSS, HTML, MySQL, PHP, and Javascript <br>
+		• Learned how to implement web development skills to design websites
+	</blockquote>
+<p style= 'font-weight: bold'> Ix Style - Marketing/PR Intern </p>
+	<blockquote>
+		• In charge of contacting media publications and editors for fashion feature requests <br>
+		• Reorganized customer service system to make it more user-friendly <br>
+		• Researched speaking opportunities for the Ix Style brand and reached out to wholesale vendors
+	</blockquote>
+<p style= 'font-weight: bold'> New Tang Dynasty Television - Intern </p>
+	<blockquote>
+		• Researched and published original articles <br>
+		• Worked collaboratively to edit newspaper articles before publication
+	</blockquote>
+</div>
+
+<blockquote>
+• Video editing, Microsoft Word, Powerpoint, Excel, Photoshop, Adobe Illustrator
+• Excellent at design and creative marketing
+• Photographer
+• Fluent in Mandarin, proficient in French and Spanish
+</blockquote>
+</div>
+
 
 
 <script>

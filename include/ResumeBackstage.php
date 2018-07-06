@@ -28,7 +28,7 @@ function DisplayPage(){
 								<blockquote>
 									•	Salutatorian of the Class of 2016 <br>
 								</blockquote>
-							</div>
+						</div>
 					</div>
 
 					<div id='psychClasses'>
@@ -90,7 +90,7 @@ function DisplayPage(){
 				"
 					<a class='link' href='http://localhost:8888/ResumeHome.php'>HOME</a>
 					<a class='link' href='http://localhost:8888/ResumeStage.php?page=Leadership'>LEADERSHIP</a>
-					<a class='link' href='http://localhost:8888/ResumeStage.php?page=Experience'>WORK</a>
+					<a class='link' href='http://localhost:8888/ResumeStage.php?page=Experience'>EXPERIENCE</a>
 					<a class='link' href='http://localhost:8888/ResumeStage.php?page=Skills'>SKILLS</a>
 				"
 		),
@@ -98,19 +98,53 @@ function DisplayPage(){
 		'Leadership'=>array(
 			'Header'=> "Leadership",
 			'Title'=> "LEADERSHIP",
-			'Content'=>"blah blah",
+			'Content'=>"
+				<p style= 'font-weight: bold'> Director of Marketing - Washington University Amateurs A Cappella </p>
+					<blockquote>
+						• In charge of marketing and PR, including social media and designing print media <br>
+						• Delegates and handles responsibilities given by the Group Coordinator <br>
+						• Event photographer
+					</blockquote>
+				<p style= 'font-weight: bold'> Social Media Coordinator - Washington University A Cappella Advisory Council (ACAC) </p>
+					<blockquote>
+						• Established executive decisions on events for the WashU a cappella community, including We Sing for Ice Cream and auditions <br>
+						• Designed advertisements and social media posters <br>
+						• Used Facebook, Instagram, Twitter, email and print media to
+						communicate to new students and promote event
+					</blockquote>
+				</div>
+
+			",
 			'NavigationBar'=>
 					"
 						<a class='link' href='http://localhost:8888/ResumeHome.php'>HOME</a>
 						<a class='link' href='http://localhost:8888/ResumeStage.php?page=Education'>EDUCATION</a>
-						<a class='link' href='http://localhost:8888/ResumeStage.php?page=Experience'>WORK</a>
+						<a class='link' href='http://localhost:8888/ResumeStage.php?page=Experience'>EXPERIENCE</a>
 						<a class='link' href='http://localhost:8888/ResumeStage.php?page=Skills'>SKILLS</a>
 					"
 				),
 		'Experience'=>array(
 			'Header'=> "Experience",
 			'Title'=> "EXPERIENCE",
-			'Content'=>"blah de blah",
+			'Content'=>"
+				<p style= 'font-weight: bold'> Less Annoying CRM - Coding Fellow </p>
+					<blockquote>
+						• Learned CSS, HTML, MySQL, PHP, and Javascript <br>
+						• Learned how to implement web development skills to design websites
+					</blockquote>
+				<p style= 'font-weight: bold'> Ix Style - Marketing/PR Intern </p>
+					<blockquote>
+						• In charge of contacting media publications and editors for fashion feature requests <br>
+						• Reorganized customer service system to make it more user-friendly <br>
+						• Researched speaking opportunities for the Ix Style brand and reached out to wholesale vendors
+					</blockquote>
+				<p style= 'font-weight: bold'> New Tang Dynasty Television - Intern </p>
+					<blockquote>
+						• Researched and published original articles <br>
+						• Worked collaboratively to edit newspaper articles before publication
+					</blockquote>
+				</div>
+			",
 			'NavigationBar'=>
 				"
 					<a class='link' href='http://localhost:8888/ResumeHome.php'>HOME</a>
@@ -122,13 +156,21 @@ function DisplayPage(){
 		'Skills'=>array(
 			'Header'=> "Skills",
 			'Title'=> "SKILLS",
-			'Content'=>"blah de blah de blah blah blah!",
+			'Content'=>"
+					<p>
+						• Video editing, Microsoft Word, Powerpoint, Excel, Photoshop, Adobe Illustrator <br>
+						• Excellent at design and creative marketing <br>
+						• Photographer <br>
+						• Fluent in Mandarin, proficient in French and Spanish <br>
+					</p>
+				</div>
+			",
 			'NavigationBar'=>
 				"
 					<a class='link' href='http://localhost:8888/ResumeHome.php'>HOME</a>
 					<a class='link' href='http://localhost:8888/ResumeStage.php?page=Education'>EDUCATION</a>
 					<a class='link' href='http://localhost:8888/ResumeStage.php?page=Leadership'>LEADERSHIP</a>
-					<a class='link' href='http://localhost:8888/ResumeStage.php?page=Experience'>WORK</a>
+					<a class='link' href='http://localhost:8888/ResumeStage.php?page=Experience'>EXPERIENCE</a>
 				",
 		)
 	);

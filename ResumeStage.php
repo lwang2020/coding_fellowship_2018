@@ -6,7 +6,7 @@ $DisplayPage = DisplayPage();
 echo "
 <html>
 	<head>
-		<title>Lindsay Wang |".$DisplayPage[$_REQUEST['page']]['Header']."</title>
+		<title>Lindsay Wang | ".$DisplayPage[$_REQUEST['page']]['Header']."</title>
 	</head>
 
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
@@ -15,7 +15,7 @@ echo "
 		<div class = 'greenBox'>
 
 		<div class='NavBar'>".$DisplayPage[$_REQUEST['page']]['NavigationBar']."</div>
-		
+
 			<div class = 'titleBorder'>
 				<h1 class = 'PageTitle'> &emsp;".$DisplayPage[$_REQUEST['page']]['Title']."<h1>
 			</div>
@@ -31,5 +31,3 @@ echo "
 		".$DisplayPage[$_REQUEST['page']]['Javascript']."
 	</body>
 </html>";
-
-//<div class='NavBar'>".$DisplayPage[$_REQUEST['page']]['NavigationBar']."</div>
