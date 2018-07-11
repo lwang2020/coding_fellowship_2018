@@ -1,14 +1,12 @@
 
 <?php
+include ('include/include_ajax.php');
 
 session_start();
 if (!isset($_SESSION['UserId'])){
 	die("You're not logged in. <a href = 'http://localhost:8888/blogLogin.php'> Go to the login page </a>");
 }
 ?>
-
-
-
 
 <html>
 
@@ -25,35 +23,66 @@ if (!isset($_SESSION['UserId'])){
 		<h2 class='subtitle'>WORDS FROM A GIRL LEARNING HOW TO CODE </h1>
 		<p class='logInNotice'>(You're logged in.  <a href ='http://localhost:8888/blogLogOut.php'> Click here to log out.</a>)</p>
 
-			<?php
 
 
-Block(4);
-Block(5);
-Block(6);
-?>
-
-JAVASCRIPT
 
 <script type='text/javascript'>
 		function saveDraft(){
 				//get the content of the "blogPost" field
-				var postContent = $('#blogPost').val();
+				var name = $('#name').val();
+				var email = $('#email').val();
+				var comment = $('#comment').val();
 
 				//send the content to the server to be saved
-				$.post('save_post_endpoint.php', {postContent}, function(contentEchoedFromServer){
+				$.post('ajax_endpoint.php', {name, email, comment}, function(contentEchoedFromServer){
 						$('#confirmContentFromServer').html(contentEchoedFromServer);
 				})
 		}
 </script>
 
 <body>
-	<textarea name='blogPost' id='blogPost'></textarea><br/>
-	<input type='button' onclick='saveDraft()' value='Save Post' />
+	Name:
+	<textarea name='name' id='name'></textarea><br/>
+	Email:
+	<textarea name='email' id='email'></textarea><br/>
+	Comment:
+	<textarea name='comment' id='comment'></textarea><br/>
+	<input type='button' onclick='saveDraft()' value='Submit' />
 	<div id='confirmContentFromServer'></div>
 </body>
 
+<?php
+
+
+$DisplayComment = showAjaxComment();
+
+echo "<div>";
+
+
+for($a=0;$a<10;$a++){
+			echo
+			"<br> <br><p class='CommenterName'> ".$DisplayComment[$a]['Name']." commented:</p>";
+			echo
+			"<p class='CommenterComment'>".$DisplayComment[$a]['Comment']."</p> <br> <br>";
+		}
+
+echo "</div>";
+ ?>
+
+
+
 <!--
+
+<?php
+/*
+
+Block(4);
+Block(5);
+Block(6);
+
+*/
+?>
+
 echo "
 	<h1 class='SubmitAComment'> Submit a comment </h1>
 	<form action='' method='post'>
