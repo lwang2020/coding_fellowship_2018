@@ -20,9 +20,9 @@ function DisplayPage(){
 								</blockquote>
 							<p style= 'font-weight: bold'> Relevant Courses:</p>
 								<blockquote>
-									•	<button onclick = 'showPsychClasses()'> Psychology Classes </button>	<br>
-									• <button onclick = 'showMarketingClasses()'> Marketing Classes </button>	<br>
-									•	<button onclick = 'showDesignClasses()'> Design Classes </button>	<br>
+									<input type='checkbox' class='checkbox' onclick='showPsychClasses()'> Philosophy-Neuroscience-Psychology Classes <br>
+									<input type='checkbox' class='checkbox' onclick='showMarketingClasses()'> Marketing Classes <br>
+									<input type='checkbox' class='checkbox' onclick='showDesignClasses()'> Design Classes <br>
 								</blockquote>
 							<p style= 'font-weight: bold'> Mountain Lakes High School (Diploma 2016) </p>
 								<blockquote>

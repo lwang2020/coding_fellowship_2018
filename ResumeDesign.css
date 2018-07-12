@@ -165,16 +165,20 @@ button {
 
 .firstObject:hover {
 	color: magenta;
+	cursor:hand;
 }
 
 .secondObject:hover {
 	color: green;
+	cursor:hand;
 }
 
 .thirdObject:hover {
 	color: blue;
+	cursor:hand;
 }
 
 .fourthObject:hover {
 	color: red;
+	cursor:hand;
 }

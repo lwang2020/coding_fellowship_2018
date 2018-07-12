@@ -95,4 +95,20 @@ function RunThroughBlurbs (blurbNumber) {
 	}
 }
 
+//Function to hide a div if you click outside of it
+
+$(document).mouseup(function (e){
+
+	var container = $("1");
+
+	if (!container.is(e.target) && container.has(e.target).length === 0){
+
+		container.fadeOut();
+
+		console.log (container);
+
+	}
+});
+
+
 </script>
