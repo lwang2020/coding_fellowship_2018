@@ -2,6 +2,7 @@
 include ('include/ResumeInclude.php');
 ?>
 
+
 <html>
 
 	<head>
@@ -51,7 +52,9 @@ include ('include/ResumeInclude.php');
 	</body>
 </html>
 
-<script>
+
+<script src="/include/jquery.js"></script>
+<script type = 'text/javascript'>
 
 function HideEverything(){
 	var i;
