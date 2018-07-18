@@ -12,34 +12,8 @@ include ('include/ResumeInclude.php');
 	</head>
 
 	<body>
-		<div class="page-wrap">
-			<h1 class='header'> Lindsay's Resume </h1>
-				<h2 class='subtitle'>hire me pls </h1>
-					<p class ='firstObject' onclick = "RunThroughBlurbs('firstBlurb')"> First Object </p>
-					<p class ='secondObject' onclick = "RunThroughBlurbs('secondBlurb')"> Second Object </p>
-					<p class ='thirdObject' onclick = "RunThroughBlurbs('thirdBlurb')"> Third Object </p>
-					<p class ='fourthObject' onclick = "RunThroughBlurbs('fourthBlurb')"> Fourth Object </p>
-		</div>
+		<img src = "mock up resume.png" alt = "Resume Mock up" class= "backgroundImage">
 
-		<div id= '1'>
-			Blurb 1
-			<button onclick = 'HideEverything()'> X out </button>
-		</div>
-
-		<div id= '2'>
-			Blurb 2
-			<button onclick = 'HideEverything()'> X out </button>
-		</div>
-
-		<div id= '3'>
-			Blurb 3
-			<button onclick = 'HideEverything()'> X out </button>
-		</div>
-
-		<div id= '4'>
-			Blurb 4
-			<button onclick = 'HideEverything()'> X out </button>
-		</div>
 
 		<footer class='NavBar'>
 			<a class='link' href='http://localhost:8888/ResumeStage.php?page=Education'>EDUCATION</a>
@@ -47,6 +21,40 @@ include ('include/ResumeInclude.php');
 			<a class='link' href='http://localhost:8888/ResumeStage.php?page=Experience'>EXPERIENCE</a>
 			<a class='link' href='http://localhost:8888/ResumeStage.php?page=Skills'>SKILLS</a>
 		</footer>
+	</div>
+
+		<div id = "entirePage">
+			<div class="page-wrap">
+				<h1 class='header'> Lindsay's Resume </h1>
+					<h2 class='subtitle'>A work in progress </h1>
+						<p id ='firstObject' class = 'object' onclick = "RunThroughBlurbs('firstBlurb')"> First Object </p>
+						<p id ='secondObject' class = 'object' onclick = "RunThroughBlurbs('secondBlurb')"> Second Object </p>
+						<p id ='thirdObject' class = 'object' onclick = "RunThroughBlurbs('thirdBlurb')"> Third Object </p>
+						<p id ='fourthObject' class = 'object' onclick = "RunThroughBlurbs('fourthBlurb')"> Fourth Object </p>
+
+			</div>
+
+			<div id= '1' class = 'blurb'>
+				Blurb 1
+				<button onclick = 'HideEverything()'> X out </button>
+			</div>
+
+			<div id= '2' class = 'blurb'>
+				Blurb 2
+				<button onclick = 'HideEverything()'> X out </button>
+			</div>
+
+			<div id= '3' class = 'blurb'>
+				Blurb 3
+				<button onclick = 'HideEverything()'> X out </button>
+			</div>
+
+			<div id= '4' class = 'blurb'>
+				Blurb 4
+				<button onclick = 'HideEverything()'> X out </button>
+			</div>
+
+
 
 
 	</body>
@@ -57,12 +65,7 @@ include ('include/ResumeInclude.php');
 <script type = 'text/javascript'>
 
 function HideEverything(){
-	var i;
-	var oneBlurb;
-	for (i = 1; i < 5; i++) {
-		oneBlurb = document.getElementById(i);
-		oneBlurb.style.display = 'none';
-	}
+	$('.blurb').hide();
 }
 
 function showBlurb(blurb) {
@@ -73,6 +76,7 @@ function showBlurb(blurb) {
 				a.style.display = 'none';
 		}
 }
+
 
 HideEverything();
 
@@ -98,20 +102,16 @@ function RunThroughBlurbs (blurbNumber) {
 	}
 }
 
-//Function to hide a div if you click outside of it
+//Hides the blurb if you click outside of it
 
-$(document).mouseup(function (e){
+$(document).ready(function(){
+    $('#entirePage').mouseup(function(e){
+    HideEverything();
+    });
 
-	var container = $("1");
-
-	if (!container.is(e.target) && container.has(e.target).length === 0){
-
-		container.fadeOut();
-
-		console.log (container);
-
-	}
+		$('.blurb').mouseup(function(e){
+			e.stopPropagation();
+		});
 });
-
 
 </script>

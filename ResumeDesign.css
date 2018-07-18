@@ -1,4 +1,10 @@
+.header {
+	text-align: center;
+}
 
+.subtitle {
+	text-align: center;
+}
 .NavBar {
     background-color:none;
     overflow: auto;
@@ -9,6 +15,7 @@
 		font-family: 'Raleway', sans-serif;
 		border-top: 3px #353333 solid;
 		border-bottom: 3px #353333 solid;
+		position:static;
 }
 
 .NavBar a {
@@ -163,22 +170,44 @@ button {
 	box-shadow: 2px 2px 10px grey;
 }
 
-.firstObject:hover {
+#firstObject {
+	position:relative;
+	z-index: 1;
+	left: 25%;
+	top: 250px;
+}
+
+#firstObject:hover {
 	color: magenta;
 	cursor:hand;
 }
 
-.secondObject:hover {
+#secondObject:hover {
 	color: green;
 	cursor:hand;
 }
 
-.thirdObject:hover {
+#thirdObject:hover {
 	color: blue;
 	cursor:hand;
 }
 
-.fourthObject:hover {
+#fourthObject:hover {
 	color: red;
 	cursor:hand;
+}
+
+.blurb {
+	background-color: red;
+}
+
+.object {
+	background-color: green;
+	width: 50px;
+}
+
+.backgroundImage {
+	width: 100%;
+	position: absolute;
+	z-index: -1;
 }
