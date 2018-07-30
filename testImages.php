@@ -1,18 +1,18 @@
 <html>
 	<head>
 		<link rel='stylesheet' href='testImages.css' />
-		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="HandheldFriendly" content="true">
+		<meta name='viewport'
+      content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 	</head>
 
+<body>
+	<div class= 'page'>
 
 <div id= 'firstShelfContents'>
 	<img src= "shelf2.svg" class= 'shelf' id= 'topShelf'>
 	<img src= "lacrm2.svg" id= 'lacrm'>
-	<img src= "IxStyle2.svg" id= 'IxStyle'>
+	<img src= "IxStyle3.svg" id= 'IxStyle'>
 	<img src= "ntd2.svg" id= 'ntd'>
-
 </div>
 
 
@@ -36,7 +36,7 @@
 
 
 <div id='DeskDiv'>
-	<img src= "corkboard.svg" id='corkboard'>
+<img src= "corkboard.svg" id='corkboard'>
 		<div id='desktop'>
 			<img src= "camera2.svg" id='camera'>
 			<img src= "pencils2.svg" id='pencils'>
@@ -47,4 +47,8 @@
 	<img src= "chair3.svg" id='chair'>
 </div>
 
+</div>
+
+
+</body>
 </html>

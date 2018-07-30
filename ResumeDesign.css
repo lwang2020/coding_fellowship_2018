@@ -1,10 +1,18 @@
-.header {
+
+/* Home Page */
+.HomePageHeader {
 	text-align: center;
 }
 
-.subtitle {
+.HomePageSubHeader {
 	text-align: center;
 }
+
+.page-wrap {
+  margin-bottom: 50px;
+}
+
+/* Navigation Bar */
 .NavBar {
     background-color:none;
     overflow: auto;
@@ -30,184 +38,1513 @@
 	color: #989aa0;
 }
 
-.page-wrap {
-  margin-bottom: 50px;
-}
-
-.link {
+.linkToOtherPages {
 	margin-left: 30px;
 	margin-right: 30px;
 	overflow: hidden;
 }
 
-.homeText {
-	color: #353333;
-	text-align:left;
-	font-size: 20px;
-	font-family: 'Raleway', sans-serif;
-}
 
-blockquote {
-	color: #353333;
-	text-align:left;
-	font-size: 20px;
-	font-family: 'Lato', sans-serif;
-}
-
-.PageTitle {
-	color: #353333;
-	z-index: 1;
-	font-size: 50px;
-	font-family: 'Oswald', sans-serif;
-	text-align: left;
-	border-style: solid;
-	border-color: #353333;
-	width: 600px;
-	margin-left: 15%;
-}
-
-.greenBox {
-	background-color: #d5edc7;
-	height: 400px;
-	z-index: 0;
-	position: relative;
-	padding: 30px;
-}
-
-
-.pageContent {
+/* BLURB STUFF */
+.Xout {
+	right: 6px;
 	position: absolute;
-	z-index: 2;
-	width: 700px;
-	left: 40%;
-	font-family: 'Lato', sans-serif;
-	color: #353333;
+	z-index: 20;
+	top: 2px;
+	box-shadow: none;
+	border: none;
+	cursor: hand;
+	background-color:white;
 	font-size: 20px;
-	line-height: 30px;
-}
-
-
-.pageFooter {
-	top: 600px;
-	position: relative;
-	width: auto;
-	left: 20%;
-}
-
-.logo {
-	height: 200px;
-	margin: 40px;
-	display: inline;
-	float: left;
-}
-
-.Lindsay {
-	color: #353333;
-	font-size: 60px;
-	font-family: 'Oswald', sans-serif;
-	text-align: left;
-	display: inline-block;
-	position: relative;
-	letter-spacing: 6px;
-	margin-bottom: 0;
-	margin-top: 45px;;
-}
-
-.contact {
-	font-family: 'Lato', sans-serif;
-	color: #353333;
-	font-size: 15px;
-	line-height: 30px;
-	letter-spacing: 2px;
-	margin: none;
-	display: block;
-	position: relative;
-	font-weight: lighter;
-	margin-top: 0;
-}
-
-#psychClasses {
-	font-family: 'Lato', sans-serif;
-	color: #353333;
-	font-size: 15px;
-	line-height: 30px;
-	letter-spacing: 2px;
-	font-weight: lighter;
-	position: static;
-	display: none;
-}
-
-#marketingClasses {
-	font-family: 'Lato', sans-serif;
-	color: #353333;
-	font-size: 15px;
-	line-height: 30px;
-	letter-spacing: 2px;
-	font-weight: lighter;
-	position: relative;
-	display: none;
-}
-
-#designClasses {
-	font-family: 'Lato', sans-serif;
-	color: #353333;
-	font-size: 15px;
-	line-height: 30px;
-	letter-spacing: 2px;
-	font-weight: lighter;
-	position: relative;
-	display: none;
-}
-
-
-button {
-	font-family: 'Lato', sans-serif;
-	color: #353333;
-	font-size: 20px;
-	line-height: 20px;
-	background-color: #f9f9f9;
-	border: 1px solid #e5e3e3;
-	box-shadow: 2px 2px 10px grey;
-}
-
-#firstObject {
-	position:relative;
-	z-index: 1;
-	left: 25%;
-	top: 250px;
-}
-
-#firstObject:hover {
-	color: magenta;
-	cursor:hand;
-}
-
-#secondObject:hover {
-	color: green;
-	cursor:hand;
-}
-
-#thirdObject:hover {
-	color: blue;
-	cursor:hand;
-}
-
-#fourthObject:hover {
-	color: red;
-	cursor:hand;
-}
-
-.blurb {
-	background-color: red;
 }
 
 .object {
-	background-color: green;
-	width: 50px;
+	cursor: hand;
 }
 
-.backgroundImage {
-	width: 100%;
-	position: absolute;
-	z-index: -1;
+.blurbTitle {
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	margin-top: 15px;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 5px;
 }
+
+.blurbSubtitle {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin-top: -10px;
+	font-style: italic;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+ul {
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	margin-left: 15px;
+	line-height: 20px;
+	margin-bottom: 15px;
+}
+
+.lacrmBlurb {
+	min-height: 80%;
+	height: auto;
+	width: 30%;
+	z-index: 16;
+	background: white;
+	border: white 3px solid;
+	border-radius: 20px;
+	box-shadow: 0px 5px 5px gray;
+	position: absolute;
+	margin: none;
+	margin-right: none;
+	margin-left: 7%;
+}
+
+.ixStyleBlurb {
+	min-height: 80%;
+	height: auto;
+	width: 30%;
+	z-index: 16;
+	background: white;
+	border: white 3px solid;
+	border-radius: 20px;
+	box-shadow: 0px 5px 5px gray;
+	position: absolute;
+	margin: none;
+	margin-right: none;
+	margin-left: 7%;
+	display: inline-block;
+	top: -30px;
+}
+
+.ntdBlurb {
+	min-height: 80%;
+	height: auto;
+	width: 30%;
+	z-index: 16;
+	background: white;
+	border: white 3px solid;
+	border-radius: 20px;
+	box-shadow: 0px 5px 5px gray;
+	position: absolute;
+	margin: none;
+	margin-left: -7%;
+	display: inline-block;
+	top: 0px;
+}
+
+.baseballCapBlurb {
+	min-height: 80%;
+	height: auto;
+	width: 30%;
+	z-index: 16;
+	background: white;
+	border: white 3px solid;
+	border-radius: 20px;
+	box-shadow: 0px 5px 5px gray;
+	position: absolute;
+	margin: none;
+	margin-right: none;
+	margin-left: 5%;
+}
+
+.trophyBlurb {
+	min-height: 80%;
+	height: auto;
+	width: 30%;
+	z-index: 16;
+	background: white;
+	border: white 3px solid;
+	border-radius: 20px;
+	box-shadow: 0px 5px 5px gray;
+	position: absolute;
+	margin: none;
+	margin-left: 0;
+	display: inline-block;
+	top: 0px;
+}
+
+.mountainLakesBlurb {
+	min-height: 80%;
+	height: auto;
+	width: 30%;
+	z-index: 16;
+	background: white;
+	border: white 3px solid;
+	border-radius: 20px;
+	box-shadow: 0px 5px 5px gray;
+	position: absolute;
+	margin: none;
+	margin-left: 0;
+	display: inline-block;
+	top: 0;
+}
+
+.booksBlurb {
+	min-height: 80%;
+	height: auto;
+	width: 30%;
+	z-index: 16;
+	background: white;
+	border: white 3px solid;
+	border-radius: 20px;
+	box-shadow: 0px 5px 5px gray;
+	position: absolute;
+	margin: none;
+	margin-left: -7%;
+	display: inline-block;
+	top: 0;
+}
+
+.pearlPlantBlurb {
+	min-height: 80%;
+	height: auto;
+	width: 30%;
+	z-index: 16;
+	background: white;
+	border: white 3px solid;
+	border-radius: 20px;
+	box-shadow: 0px 5px 5px gray;
+	position: absolute;
+	margin: none;
+	margin-right: none;
+	margin-left: 5%;
+}
+
+.succulentBlurb {
+	min-height: 80%;
+	height: auto;
+	width: 30%;
+	z-index: 16;
+	background: white;
+	border: white 3px solid;
+	border-radius: 20px;
+	box-shadow: 0px 5px 5px gray;
+	position: absolute;
+	margin: none;
+	margin-left: 0;
+	display: inline-block;
+	top: 0;
+}
+
+.leafyPlantBlurb {
+	min-height: 80%;
+	height: auto;
+	width: 30%;
+	z-index: 16;
+	background: white;
+	border: white 3px solid;
+	border-radius: 20px;
+	box-shadow: 0px 5px 5px gray;
+	position: absolute;
+	margin: none;
+	margin-left: 5%;
+	display: inline-block;
+	top: 0;
+}
+
+.cameraBlurb {
+	min-height: 80%;
+	height: auto;
+	width: 30%;
+	z-index: 16;
+	background: white;
+	border: white 3px solid;
+	border-radius: 20px;
+	box-shadow: 0px 5px 5px gray;
+	position: absolute;
+	margin: none;
+	top: 15%;
+	margin-right: none;
+	margin-left: 5%;
+	overflow: auto;
+}
+
+#photographyWebsiteButton {
+	height: 20%;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+	cursor: hand;
+}
+
+.pencilsBlurb {
+	min-height: 80%;
+	height: auto;
+	width: 30%;
+	z-index: 16;
+	background: white;
+	border: white 3px solid;
+	border-radius: 20px;
+	box-shadow: 0px 5px 5px gray;
+	position: absolute;
+	margin: none;
+	margin-left: 0;
+	display: inline-block;
+	top: 15%;
+}
+
+.macbookBlurb {
+	min-height: 80%;
+	height: auto;
+	width: 30%;
+	z-index: 16;
+	background: white;
+	border: white 3px solid;
+	border-radius: 20px;
+	box-shadow: 0px 5px 5px gray;
+	position: absolute;
+	margin: none;
+	margin-left:0;
+	display: inline-block;
+	top: 15%;
+}
+
+.croissantBlurb {
+	min-height: 80%;
+	height: auto;
+	width: 30%;
+	z-index: 16;
+	background: white;
+	border: white 3px solid;
+	border-radius: 20px;
+	box-shadow: 0px 5px 5px gray;
+	position: absolute;
+	margin: none;
+	margin-left: 0;
+	display: inline-block;
+	top: 15%;
+}
+
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base styles that apply to drawn object */
+.page {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin: none;
+	justify-content: center;
+}
+
+.shelf {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: none;
+}
+
+#topShelf {
+	position: absolute;
+	display: block;
+	z-index: 9;
+}
+
+#firstShelfContents {
+	z-index: 0;
+	position:absolute;
+}
+
+#lacrm {
+	z-index: 10;
+	display: inline-block;
+	position: relative;
+	animation: bounce 1s linear infinite;
+	animation-fill-mode: none;
+  animation-play-state: paused;
+}
+
+
+#IxStyle {
+	z-index: 10;
+	display: inline-block;
+	position: relative;
+	animation: bounce 1s linear infinite;
+  animation-play-state: paused;
+}
+
+#ntd {
+	z-index: 10;
+	display: inline-block;
+	position: relative;
+	animation: bounce 1s linear infinite;
+  animation-play-state: paused;
+}
+
+#secondShelfContents {
+	z-index: 0;
+	position:absolute;
+}
+
+#middleShelf {
+	position: absolute;
+	display: block;
+	z-index: 9;
+}
+
+#BaseballCap {
+	z-index: 10;
+	display: inline-block;
+	position: relative;
+	animation: bounce 1s linear infinite;
+  animation-play-state: paused;
+}
+
+#trophy {
+	z-index: 10;
+	display: inline-block;
+	position: relative;
+	animation: bounce 1s linear infinite;
+  animation-play-state: paused;
+}
+
+#mountainLakes {
+	z-index: 10;
+	display: inline-block;
+	position: relative;
+	animation: bounce 1s linear infinite;
+  animation-play-state: paused;
+}
+
+#books {
+	z-index: 10;
+	display: inline-block;
+	position: relative;
+	animation: bounce 1s linear infinite;
+  animation-play-state: paused;
+}
+
+#thirdShelfContents {
+	z-index: 0;
+	position:absolute;
+}
+
+#bottomShelf {
+	position: absolute;
+	display: block;
+	z-index: 9;
+}
+
+#pearlPlant {
+	z-index: 10;
+	display: inline-block;
+	position: relative;
+	animation: bounce 1s linear infinite;
+  animation-play-state: paused;
+}
+
+#succulent {
+	z-index: 10;
+	display: inline-block;
+	position: relative;
+	animation: bounce 1s linear infinite;
+  animation-play-state: paused;
+}
+
+#leafyPlant {
+	position: relative;
+	z-index: 10;
+	display:inline-block;
+	animation: bounce 1s linear infinite;
+  animation-play-state: paused;
+}
+
+#DeskDiv {
+	position: absolute;
+	z-index: 7;
+}
+
+#desk {
+	z-index: 8;
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#corkboard {
+	float: right;
+	display: block;
+	position: relative;
+	z-index: 9;
+}
+
+#portfolioDrawing {
+  position: relative;
+  z-index: 13;
+	float:right;
+	display: block;
+}
+
+#portfolioDrawing:hover path {
+    fill-opacity: 0;
+		fill: none;
+    stroke: #000;
+    stroke-width: 2;
+    stroke-dasharray: 2400;
+    stroke-dashoffset: 2400;
+    animation: draw 3s infinite linear;
+  }
+
+#chair {
+	z-index: 11;
+	margin-right: none;
+	margin-left: 35%;
+	position: relative;
+}
+
+#desktop {
+	position: absolute;
+	z-index: 11;
+}
+
+#camera {
+	z-index: 11;
+	display: inline-block;
+	position: relative;
+	animation: bounce 1s linear infinite;
+  animation-play-state: paused;
+}
+
+#pencils {
+	z-index: 11;
+	display: inline-block;
+	position: relative;
+	animation: bounce 1s linear infinite;
+  animation-play-state: paused;
+}
+
+#macbook {
+	z-index: 11;
+	display: inline-block;
+	position: relative;
+	animation: bounce 1s linear infinite;
+  animation-play-state: paused;
+}
+
+#croissant {
+	z-index: 11;
+	display: inline-block;
+	position: relative;
+	animation: bounce 1s linear infinite;
+  animation-play-state: paused;
+}
+
+/* Animation */
+#lacrm:hover, #IxStyle:hover, #ntd:hover, #BaseballCap:hover, #trophy:hover, #mountainLakes:hover, #books:hover,
+#pearlPlant:hover, #succulent:hover, #leafyPlant:hover, #camera:hover, #pencils:hover, #macbook:hover, #croissant:hover {
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+  animation-play-state: running;
+	}
+
+	@keyframes bounce {
+		  from,
+		  20%,
+		  53%,
+		  80%,
+		  to {
+		    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		    -webkit-transform: translate3d(0, 0, 0);
+		    transform: translate3d(0, 0, 0);
+		  }
+
+		  40%,
+		  43% {
+		    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+		    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+		    -webkit-transform: translate3d(0, -30px, 0);
+		    transform: translate3d(0, -30px, 0);
+		  }
+
+		  70% {
+		    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+		    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+		    -webkit-transform: translate3d(0, -15px, 0);
+		    transform: translate3d(0, -15px, 0);
+		  }
+
+		  90% {
+		    -webkit-transform: translate3d(0, -4px, 0);
+		    transform: translate3d(0, -4px, 0);
+		  }
+	}
+
+	@keyframes draw {
+	  to {
+	    stroke-dashoffset: 0;
+	  }
+	}
+
+/* Desktop Styles, fixed sizes */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #e5f0fc; /* Blue */
+  }
+	#firstShelfContents,
+	#secondShelfContents,
+	#thirdShelfContents {
+		width: 1000px;
+		margin-left: 10%;
+		margin-right: 10%;
+		position: absolute;
+		height: 300px;
+		display: inline-block;
+
+	}
+	#topShelf,
+	#middleShelf,
+	#bottomShelf {
+		top: 200px;
+	}
+	#firstShelfContents{
+		top: 300px;
+	}
+	#secondShelfContents{
+		top: 550px;
+	}
+	#thirdShelfContents{
+		top: 800px;
+	}
+	#lacrm {
+		top: 30px;
+		margin-right: none;
+		margin-left: 85px;
+		width: 210px;
+	}
+	#IxStyle {
+		width: 210px;
+		top:30px;
+		margin-right: 100px;
+		margin-left: 100px;
+	}
+	#ntd {
+		width: 210px;
+		top: 25px;
+		margin-left: 10px;
+		margin-right: auto;
+	}
+	#BaseballCap {
+		margin-right: none;
+		margin-left: 100px;
+		width: 170px;
+		top: 60px;
+	}
+	#trophy {
+		width: 160px;
+		top: 60px;
+		margin-left: 60px;
+	}
+	#mountainLakes {
+		width: 150px;
+		top: 60px;
+		margin-left: 60px;
+	}
+	#books {
+		width: 180px;
+		top: 60px;
+		margin-left: 50px;
+	}
+	#pearlPlant {
+		width: 200px;
+		margin-left: 150px;
+		top: 120px;
+	}
+	#succulent {
+		width: 100px;
+		margin-left: 120px;
+		top: -110px;
+	}
+	#leafyPlant {
+		margin-left: 120px;
+		width: 180px;
+		top: -110px;
+	}
+	#DeskDiv {
+		width: 1000px;
+		top: 1200px;
+		height: 1000px;
+		margin-left: 10%;
+	}
+	#desk {
+		top: 100px;
+		width: 900px;
+	}
+	#corkboard {
+		width: 250px;
+		top: 10px;
+		margin-right: 150px;
+	}
+	#portfolioDrawing {
+		position: absolute;
+		width: 200px;
+		height: auto;
+		top: 60px;
+		margin-left: 650px;
+	}
+	#chair {
+		width: 400px;
+		top: -370px;
+		display: inline-block;
+	}
+	#desktop {
+		top: 100px;
+		height: 300px;
+	}
+	#camera {
+		width: 110px;
+		margin-left: 110px;
+		top: 100px;
+	}
+	#pencils {
+		width: 55px;
+		margin-left: 80px;
+		top: 80px;
+	}
+	#macbook {
+		width: 280px;
+		top: 100px;
+		margin-left: -10px;
+	}
+	#croissant {
+		width: 170px;
+		margin-left: 80px;
+		top: 110px;
+	}
+}
+
+/* Tablet Styles, from large to small. The first three are responsive */
+@media only screen and (min-width: 871px) and (max-width: 960px) {
+  body {
+    background-color: #fcf883; /* Yellow */
+  }
+	#firstShelfContents,
+	#secondShelfContents,
+	#thirdShelfContents {
+		width: 100%;
+		position: absolute;
+		height: 300px;
+		display: inline-block;
+	}
+	#topShelf,
+	#middleShelf,
+	#bottomShelf {
+		top: 200px;
+	}
+	#firstShelfContents{
+		top: 200px;
+	}
+	#secondShelfContents{
+		top: 400px;
+	}
+	#thirdShelfContents{
+		top: 600px;
+	}
+	#lacrm {
+		top: 60px;
+		margin-right: 5%;
+		margin-left: 10%;
+		width: 20%;
+	}
+	#IxStyle {
+		width: 20%;
+		top:50px;
+		margin-right: 50px;
+		margin-left: 50px;
+	}
+	#ntd {
+		width: 20%;
+		top: 50px;
+		margin-left: 5%;
+	}
+	#BaseballCap {
+		margin-right: none;
+		margin-left: 90px;
+		width: 17%;
+		top: 28%;
+	}
+	#trophy {
+		width:15%;
+		top: 26%;
+		margin-left: 30px;
+	}
+	#mountainLakes {
+		width: 15%;
+		top: 28%;
+		margin-left: 60px;
+	}
+	#books {
+		width: 17%;
+		top: 25%;
+		margin-left: 50px;
+	}
+	#pearlPlant {
+		width: 20%;
+		margin-left: 120px;
+		top: 40%;
+	}
+	#succulent {
+		width: 10%;
+		margin-left: 120px;
+		top: -27%;
+	}
+	#leafyPlant {
+		margin-left: 120px ;
+		width: 17%;
+		top: -27%;
+	}
+	#DeskDiv {
+		width: 100%;
+		top: 900px;
+		height: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#desk {
+		top: 100px;
+		width: 900px;
+	}
+	#corkboard {
+		width: 250px;
+		top: 10px;
+		margin-right: 150px;
+	}
+	#portfolioDrawing {
+		position: absolute;
+		width: 200px;
+		height: auto;
+		top: 60px;
+		margin-left: 61%;
+	}
+	#chair {
+		width: 400px;
+		top: -370px;
+		display: inline-block;
+	}
+	#desktop {
+		top: 100px;
+		height: 300px;
+	}
+	#camera {
+		width: 110px;
+		margin-left: 110px;
+		top: 100px;
+	}
+	#pencils {
+		width: 55px;
+		margin-left: 80px;
+		top: 80px;
+	}
+	#macbook {
+		width: 280px;
+		top: 100px;
+		margin-left: -10px;
+	}
+	#croissant {
+		width: 17%;
+		margin-left: 70px;
+		top: 110px;
+	}
+}
+
+@media only screen and (min-width: 741px) and (max-width: 870px) {
+  body {
+    background-color: #d0efb1; /* green */
+  }
+	#firstShelfContents,
+	#secondShelfContents,
+	#thirdShelfContents {
+		width: 100%;
+		position: absolute;
+		height: 300px;
+		display: inline-block;
+	}
+	#topShelf,
+	#middleShelf,
+	#bottomShelf {
+		top: 70%;
+	}
+	#firstShelfContents{
+		top: 200px;
+	}
+	#secondShelfContents{
+		top: 400px;
+	}
+	#thirdShelfContents{
+		top: 600px;
+	}
+	#lacrm {
+		top: 30%;
+		margin-right: 5%;
+		margin-left: 10%;
+		width: 20%;
+	}
+	#IxStyle {
+		width: 20%;
+		top:28%;
+		margin-right: 50px;
+		margin-left: 50px;
+	}
+	#ntd {
+		width: 20%;
+		top: 30%;
+		margin-left: 4%;
+	}
+	#BaseballCap {
+		margin-right: none;
+		margin-left: 90px;
+		width: 17%;
+		top: 36%;
+	}
+	#trophy {
+		width:15%;
+		top: 35%;
+		margin-left: 30px;
+	}
+	#mountainLakes {
+		width: 15%;
+		top: 36%;
+		margin-left: 40px;
+	}
+	#books {
+		width: 17%;
+		top: 33%;
+		margin-left: 30px;
+	}
+	#pearlPlant {
+		width: 20%;
+		margin-left: 100px;
+		top: 48%;
+	}
+	#succulent {
+		width: 10%;
+		margin-left: 100px;
+		top: -11%;
+	}
+	#leafyPlant {
+		margin-left: 120px;
+		width: 18%;
+		top: -10%;
+	}
+	#DeskDiv {
+		width: 100%;
+		top: 900px;
+		height: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#desk {
+		top: 100px;
+		width: 100%;
+	}
+	#corkboard {
+		width: 25%;
+		top: 10px;
+		margin-right: 150px;
+	}
+	#portfolioDrawing {
+		position: absolute;
+		width: 20%;
+		height: auto;
+		top: 50px;
+		margin-left: 61%;
+	}
+	#chair {
+		width: 50%;
+		top: -300px;
+		display: inline-block;
+	}
+	#desktop {
+		top: 10%;
+		height: 30%;
+	}
+	#camera {
+		width: 12%;
+		margin-left: 7%;
+		top: 25%;
+	}
+	#pencils {
+		width: 7%;
+		margin-left: 10%;
+		top: 20%;
+	}
+	#macbook {
+		width: 30%;
+		top: 26%;
+		margin-left: -1%;
+	}
+	#croissant {
+		width: 20%;
+		margin-left: 10%;
+		top: 27%;
+	}
+}
+
+@media only screen and (min-width: 641px) and (max-width: 740px) {
+  body {
+    background-color: #f7caf6; /* pink */
+  }
+	#firstShelfContents,
+	#secondShelfContents,
+	#thirdShelfContents {
+		width: 100%;
+		position: absolute;
+		height: 300px;
+		display: inline-block;
+	}
+	#topShelf,
+	#middleShelf,
+	#bottomShelf {
+		top: 70%;
+	}
+	#firstShelfContents{
+		top: 200px;
+	}
+	#secondShelfContents{
+		top: 400px;
+	}
+	#thirdShelfContents{
+		top: 600px;
+	}
+	#lacrm {
+		top: 35%;
+		margin-right: 5%;
+		margin-left: 10%;
+		width: 20%;
+	}
+	#IxStyle {
+		width: 20%;
+		top:35%;
+		margin-right: 50px;
+		margin-left: 20px;
+	}
+	#ntd {
+		width: 20%;
+		top: 34%;
+		margin-left: 2%;
+	}
+	#BaseballCap {
+		margin-right: none;
+		margin-left: 60px;
+		width: 17%;
+		top: 40%;
+	}
+	#trophy {
+		width:15%;
+		top: 38%;
+		margin-left: 30px;
+	}
+	#mountainLakes {
+		width: 15%;
+		top: 40%;
+		margin-left: 30px;
+	}
+	#books {
+		width: 17%;
+		top: 38%;
+		margin-left: 30px;
+	}
+	#pearlPlant {
+		width: 20%;
+		margin-left: 100px;
+		top: 50%;
+	}
+	#succulent {
+		width: 70px;
+		margin-left: 80px;
+		top: 2%;
+	}
+	#leafyPlant {
+		margin-left: 80px;
+		width: 20%;
+		top: 2%;
+	}
+	#DeskDiv {
+		width: 100%;
+		top: 900px;
+		height: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#desk {
+		top: 100px;
+		width: 100%;
+	}
+	#corkboard {
+		width: 25%;
+		top: 10px;
+		margin-right: 150px;
+	}
+	#portfolioDrawing {
+		position: absolute;
+		width: 20%;
+		height: auto;
+		top: 50px;
+		margin-left: 58%;
+	}
+	#chair {
+		width: 50%;
+		top: -230px;
+		display: inline-block;
+	}
+	#desktop {
+		top: 9%;
+		height: 30%;
+	}
+	#camera {
+		width: 12%;
+		margin-left: 7%;
+		top: 25%;
+	}
+	#pencils {
+		width: 7%;
+		margin-left: 10%;
+		top: 20%;
+	}
+	#macbook {
+		width: 30%;
+		top: 26%;
+		margin-left: -1%;
+	}
+	#croissant {
+		width: 20%;
+		margin-left: 10%;
+		top: 25%;
+	}
+}
+
+/*Last/Smallest Tablet Style, but everything is fixed size*/
+@media only screen and (min-width: 401px) and (max-width: 640px) {
+  body {
+    background-color: #fccb71; /* orange*/
+  }
+	#firstShelfContents,
+	#secondShelfContents,
+	#thirdShelfContents {
+		width: 500px;
+		margin-left: 10%;
+		position: absolute;
+		height: 250px;
+		display: inline-block;
+	}
+	#topShelf,
+	#middleShelf,
+	#bottomShelf {
+		top: 200px;
+	}
+	#firstShelfContents{
+		top: 300px;
+	}
+	#secondShelfContents{
+		top: 500px;
+	}
+	#thirdShelfContents{
+		top: 700px;
+	}
+	#lacrm {
+		top: 100px;
+		margin-right: none;
+		margin-left: 40px;
+		width: 120px;
+	}
+	#IxStyle {
+		width: 120px;
+		top:100px;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	#ntd {
+		width: 120px;
+		top:100px;
+		margin-left: 10px;
+		margin-right: none;
+	}
+	#BaseballCap {
+		margin-right: none;
+		margin-left: 35px;
+		width: 100px;
+		top: 120px;
+	}
+	#trophy {
+		width: 80px;
+		top: 120px;
+		margin-left: 20px;
+	}
+	#mountainLakes {
+		width: 80px;
+		top: 120px;
+		margin-left: 20px;
+	}
+	#books {
+		width: 100px;
+		top: 115px;
+		margin-left: 10px;
+	}
+	#pearlPlant {
+		width: 120px;
+		margin-left: 60px;
+		top: 150px;
+	}
+	#succulent {
+		width: 60px;
+		margin-left: 50px;
+		top: 10px;
+	}
+	#leafyPlant {
+		margin-left: 50px;
+		width: 130px;
+		top: 10px;
+	}
+	#DeskDiv {
+		width: 500px;
+		top: 950px;
+		height: 500px;
+		margin-left: 10%;
+	}
+	#desk {
+		top: 100px;
+		width: 500px;
+	}
+	#corkboard {
+		width: 150px;
+		top: 10px;
+		margin-right: 50px;
+	}
+	#portfolioDrawing {
+		position: absolute;
+		width: 120px;
+		height: auto;
+		top: 40px;
+		margin-left: 325px;
+	}
+	#chair {
+		width: 250px;
+		top: -180px;
+		margin-left: 130px;
+		display: inline-block;
+	}
+	#desktop {
+		top: 100px;
+		height: 200px;
+	}
+	#camera {
+		width: 60px;
+		margin-left: 30px;
+		top: 70px;
+	}
+	#pencils {
+		width: 35px;
+		margin-left: 40px;
+		top: 60px;
+	}
+	#macbook {
+		width: 150px;
+		top: 70px;
+		margin-left: -10px;
+	}
+	#croissant {
+		width: 90px;
+		margin-left: 60px;
+		top: 75px;
+	}
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+		#firstShelfContents,
+		#secondShelfContents,
+		#thirdShelfContents {
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			margin: none;
+			position: absolute;
+			height: 200px;
+			display: inline-block;
+		}
+		#topShelf,
+		#middleShelf,
+		#bottomShelf {
+			top: 120px;
+		}
+		#firstShelfContents{
+			top: 300px;
+		}
+		#secondShelfContents{
+			top: 450px;
+		}
+		#thirdShelfContents{
+			top: 600px;
+		}
+		#lacrm {
+			top: 20%;
+			margin-right: none;
+			margin-left: 10%;
+			width: 25%;
+		}
+		#IxStyle {
+			width: 25%;
+			top:20%;
+			margin-right: none;
+			margin-left: none;
+		}
+		#ntd {
+			width: 25%;
+			top: 20%;
+			margin-left: none;
+		}
+		#BaseballCap {
+			margin-right: none;
+			margin-left: 8%;
+			width: 20%;
+			top: 30%;
+		}
+		#trophy {
+			width:20%;
+			top: 30%;
+			margin-left: none;
+		}
+		#mountainLakes {
+			width: 20%;
+			top: 30%;
+			margin-left: none;
+		}
+		#books {
+			width: 20%;
+			top: 30%;
+			margin-left: none;
+		}
+		#pearlPlant {
+			width: 26%;
+			margin-left: 15%;
+			top: 37%;
+		}
+		#succulent {
+			width: 50px;
+			margin-left: 2%;
+			top: -50px;
+		}
+		#leafyPlant {
+			margin-left: 5%;
+			width: 25%;
+			top: -45px;
+		}
+		#DeskDiv {
+			width: 100%;
+			top: 800px;
+			height: 550px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		#desk {
+			top: 150px;
+			width: 100%;
+		}
+		#corkboard {
+			width: 40%;
+			float:none;
+			top: 10px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		#portfolioDrawing {
+			position: absolute;
+			width: 30%;
+			height: auto;
+			top: 44px;
+			margin-left: 38%;
+		}
+		#chair {
+			display: none;
+		}
+		#desktop {
+			top: 40%;
+			height: 20%;
+		}
+		#camera {
+			width: 16%;
+			margin-left: 7%;
+			top: 25%;
+		}
+		#pencils {
+			width: 8%;
+			margin-left: 6%;
+			top: 20%;
+		}
+		#macbook {
+			width: 30%;
+			top: 26%;
+			margin-left: 3%;
+		}
+		#croissant {
+			width: 22%;
+			margin-left:2%;
+			top: 25%;
+		}
+		.lacrmBlurb {
+			min-height: 80%;
+			height: auto;
+			width: 80%;
+			z-index: 16;
+			background: white;
+			border: white 3px solid;
+			border-radius: 20px;
+			box-shadow: 0px 5px 5px gray;
+			position: absolute;
+			margin: none;
+			margin-right: none;
+			margin-left: 7%;
+		}
+		.blurbTitle {
+			font-family: 'Oswald', sans-serif;
+			font-size: 20px;
+			margin-top: 10px;
+			text-align: center;
+			background-color: white;
+		}
+
+		.blurbSubtitle {
+			font-family: 'Lato', sans-serif;
+			font-size: 15px;
+			text-align: center;
+			background-color: white;
+			margin-top: -10px;
+		}
+
+		ul {
+			font-family: 'Lato', sans-serif;
+			font-size: 13px;
+			background-color: white;
+			margin-left: 15px;
+			line-height: 20px;
+		}
+	}
+
+/* Stuff on the pages */
+
+	/* anything that was in bullet points */
+	blockquote {
+			color: #353333;
+			text-align:left;
+			font-size: 20px;
+			font-family: 'Lato', sans-serif;
+		}
+
+	.PageTitle {
+		color: #353333;
+		z-index: 1;
+		font-size: 50px;
+		font-family: 'Oswald', sans-serif;
+		text-align: left;
+		border-style: solid;
+		border-color: #353333;
+		width: 600px;
+		margin-left: 15%;
+	}
+
+	.greenBox {
+		background-color: #d5edc7;
+		height: 400px;
+		z-index: 0;
+		position: relative;
+		padding: 30px;
+	}
+
+	.pageContent {
+		position: absolute;
+		z-index: 2;
+		width: 700px;
+		left: 40%;
+		font-family: 'Lato', sans-serif;
+		color: #353333;
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	/* Page Footer */
+		.pageFooter {
+			top: 600px;
+			position: relative;
+			width: auto;
+			left: 20%;
+		}
+
+		.logo {
+			height: 200px;
+			margin: 40px;
+			display: inline;
+			float: left;
+		}
+
+		.Lindsay {
+			color: #353333;
+			font-size: 60px;
+			font-family: 'Oswald', sans-serif;
+			text-align: left;
+			display: inline-block;
+			position: relative;
+			letter-spacing: 6px;
+			margin-bottom: 0;
+			margin-top: 45px;;
+		}
+
+		.contact {
+		font-family: 'Lato', sans-serif;
+		color: #353333;
+		font-size: 15px;
+		line-height: 30px;
+		letter-spacing: 2px;
+		margin: none;
+		display: block;
+		position: relative;
+		font-weight: lighter;
+		margin-top: 0;
+	}
+
+	/* Specifically on the 'Education' page */
+		#psychClasses {
+			font-family: 'Lato', sans-serif;
+			color: #353333;
+			font-size: 15px;
+			line-height: 30px;
+			letter-spacing: 2px;
+			font-weight: lighter;
+			position: static;
+			display: none;
+		}
+
+		#marketingClasses {
+			font-family: 'Lato', sans-serif;
+			color: #353333;
+			font-size: 15px;
+			line-height: 30px;
+			letter-spacing: 2px;
+			font-weight: lighter;
+			position: relative;
+			display: none;
+		}
+
+		#designClasses {
+		font-family: 'Lato', sans-serif;
+		color: #353333;
+		font-size: 15px;
+		line-height: 30px;
+		letter-spacing: 2px;
+		font-weight: lighter;
+		position: relative;
+		display: none;
+	}
