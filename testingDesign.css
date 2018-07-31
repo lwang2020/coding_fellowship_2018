@@ -1,0 +1,117 @@
+.Title {
+	color: #353333;
+	z-index: 1;
+	font-size: 50px;
+	font-family: 'Oswald', sans-serif;
+	text-align: left;
+	border-style: solid;
+	border-color: #353333;
+	width: 600px;
+	margin-left: 15%;
+}
+
+.greenBox {
+	background-color: #d5edc7;
+	height: 300px;
+	z-index: 0;
+	position: relative;
+	padding: 30px;
+}
+
+
+.content {
+	position: absolute;
+	z-index: 2;
+	width: 600px;
+	left: 40%;
+	font-family: 'Lato', sans-serif;
+	color: #353333;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+
+.footer {
+	top: 600px;
+	position: relative;
+	width: auto;
+	left: 20%;
+}
+
+.logo {
+	height: 200px;
+	margin: 40px;
+	display: inline;
+	float: left;
+}
+
+.Lindsay {
+	color: #353333;
+	font-size: 60px;
+	font-family: 'Oswald', sans-serif;
+	text-align: left;
+	display: inline-block;
+	position: relative;
+	letter-spacing: 6px;
+	margin-bottom: 0;
+	margin-top: 45px;;
+}
+
+.contact {
+	font-family: 'Lato', sans-serif;
+	color: #353333;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 2px;
+	margin: none;
+	display: block;
+	position: relative;
+	font-weight: lighter;
+	margin-top: 0;
+}
+
+#psychClasses {
+	font-family: 'Lato', sans-serif;
+	color: #353333;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 2px;
+	font-weight: lighter;
+	position: static;
+	display: none;
+}
+
+#marketingClasses {
+	font-family: 'Lato', sans-serif;
+	color: #353333;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 2px;
+	font-weight: lighter;
+	position: relative;
+/*	top:750px; */
+	display: none;
+}
+
+#designClasses {
+	font-family: 'Lato', sans-serif;
+	color: #353333;
+	font-size: 15px;
+	line-height: 30px;
+	letter-spacing: 2px;
+	font-weight: lighter;
+	position: relative;
+/*	top:850px; */
+	display: none;
+}
+
+
+button {
+	font-family: 'Lato', sans-serif;
+	color: #353333;
+	font-size: 20px;
+	line-height: 20px;
+	background-color: #f9f9f9;
+	border: 1px solid #e5e3e3;
+	box-shadow: 2px 2px 10px grey;
+}
