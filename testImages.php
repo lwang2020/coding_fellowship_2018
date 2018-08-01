@@ -14,8 +14,7 @@
 	<img src= "IxStyle3.svg" id= 'IxStyle'>
 	<img src= "ntd2.svg" id= 'ntd'>
 </div>
-
-
+<img src= "testingshelf!.svg">
 
 <div id='secondShelfContents'>
 	<img src= "shelf2.svg" class= 'shelf' id='middleShelf'>
