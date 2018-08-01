@@ -2,10 +2,23 @@
 /* Home Page */
 .HomePageHeader {
 	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 .HomePageSubHeader {
 	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#resumeDownloadLink:link {
+	color:red
+}
+#resumeDownloadLink:visited {
+	color:red
+}
+
+#resumeDownloadLink:hover {
+	color: #fc888d;
 }
 
 .page-wrap {
@@ -56,6 +69,7 @@
 	cursor: hand;
 	background-color:white;
 	font-size: 20px;
+	border-radius: 100px;
 }
 
 .object {
@@ -253,15 +267,11 @@ ul {
 	height: auto;
 	width: 30%;
 	z-index: 16;
-	background: white;
-	border: white 3px solid;
-	border-radius: 20px;
-	box-shadow: 0px 5px 5px gray;
 	position: absolute;
 	margin: none;
-	top: 15%;
+	top: 0%;
 	margin-right: none;
-	margin-left: 5%;
+	margin-left: 0%;
 	overflow: auto;
 }
 
@@ -280,13 +290,9 @@ ul {
 	height: auto;
 	width: 30%;
 	z-index: 16;
-	background: white;
-	border: white 3px solid;
-	border-radius: 20px;
-	box-shadow: 0px 5px 5px gray;
 	position: absolute;
 	margin: none;
-	margin-left: 0;
+	margin-left: -15%;
 	display: inline-block;
 	top: 15%;
 }
@@ -294,33 +300,31 @@ ul {
 .macbookBlurb {
 	min-height: 80%;
 	height: auto;
-	width: 30%;
+	width: 25%;
 	z-index: 16;
-	background: white;
-	border: white 3px solid;
-	border-radius: 20px;
-	box-shadow: 0px 5px 5px gray;
 	position: absolute;
 	margin: none;
-	margin-left:0;
+	margin-left:2%;
 	display: inline-block;
-	top: 15%;
+	top: 30%;
+}
+
+#macbookBlurbSubtitle {
+	color: white;
+	font-size: 15px;
+	text-align: left;
 }
 
 .croissantBlurb {
 	min-height: 80%;
 	height: auto;
 	width: 30%;
-	z-index: 16;
-	background: white;
-	border: white 3px solid;
-	border-radius: 20px;
-	box-shadow: 0px 5px 5px gray;
+	z-index: 18;
 	position: absolute;
 	margin: none;
-	margin-left: 0;
+	margin-left: 10%;
 	display: inline-block;
-	top: 15%;
+	top: 45%;
 }
 
 /* Universal Selector */
@@ -345,6 +349,18 @@ ul {
 	margin-right: none;
 }
 
+#header {
+	z-index: 0;
+	position:absolute;
+	width: 100%;
+}
+
+#tippyTopShelf {
+	position: absolute;
+	display: block;
+	z-index: 9;
+}
+
 #topShelf {
 	position: absolute;
 	display: block;
@@ -352,7 +368,7 @@ ul {
 }
 
 #firstShelfContents {
-	z-index: 0;
+	z-index: 30;
 	position:absolute;
 }
 
@@ -383,7 +399,7 @@ ul {
 }
 
 #secondShelfContents {
-	z-index: 0;
+	z-index: 30;
 	position:absolute;
 }
 
@@ -426,7 +442,7 @@ ul {
 }
 
 #thirdShelfContents {
-	z-index: 0;
+	z-index: 30;
 	position:absolute;
 }
 
@@ -462,7 +478,7 @@ ul {
 
 #DeskDiv {
 	position: absolute;
-	z-index: 7;
+	z-index: 30;
 }
 
 #desk {
@@ -541,6 +557,23 @@ ul {
   animation-play-state: paused;
 }
 
+#contactDiv {
+	display: block;
+	position: absolute;
+	z-index: 20;
+}
+
+#contactTitle {
+	font-family: 'Montserrat', sans-serif;
+}
+
+#contactInfo {
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+}
+
+
+
 /* Animation */
 #lacrm:hover, #IxStyle:hover, #ntd:hover, #BaseballCap:hover, #trophy:hover, #mountainLakes:hover, #books:hover,
 #pearlPlant:hover, #succulent:hover, #leafyPlant:hover, #camera:hover, #pencils:hover, #macbook:hover, #croissant:hover {
@@ -588,10 +621,19 @@ ul {
 	}
 
 /* Desktop Styles, fixed sizes */
+/* Blue */
 @media only screen and (min-width: 961px) {
   body {
-    background-color: #e5f0fc; /* Blue */
+    background-color: #e5f0fc;
   }
+	.HomePageHeader {
+		font-size: 100px;
+		margin-top: 50px;
+	}
+	.HomePageSubHeader {
+		font-size: 15px;
+	}
+	#header,
 	#firstShelfContents,
 	#secondShelfContents,
 	#thirdShelfContents {
@@ -603,10 +645,11 @@ ul {
 		display: inline-block;
 
 	}
+	#tippyTopShelf,
 	#topShelf,
 	#middleShelf,
 	#bottomShelf {
-		top: 200px;
+		top: 225px;
 	}
 	#firstShelfContents{
 		top: 300px;
@@ -722,13 +765,38 @@ ul {
 		margin-left: 80px;
 		top: 110px;
 	}
+	#contactDiv {
+		top: 460px;
+		margin-left: 80px;
+		width: 250px;
+	}
+	#contactTitle {
+		font-size: 35px;
+	}
+	#contactInfo {
+		margin-top: 20px;
+		font-size: 20px;
+	}
 }
 
 /* Tablet Styles, from large to small. The first three are responsive */
+/* Yellow */
 @media only screen and (min-width: 871px) and (max-width: 960px) {
   body {
-    background-color: #fcf883; /* Yellow */
+    background-color: #fcf883;
   }
+	.HomePageHeader {
+		font-size: 100px;
+		margin-top: 0px;
+	}
+	.HomePageSubHeader {
+		font-size: 18px;
+	}
+	#entirePage {
+		position: relative;
+		top: 100px;
+	}
+	#header,
 	#firstShelfContents,
 	#secondShelfContents,
 	#thirdShelfContents {
@@ -737,10 +805,13 @@ ul {
 		height: 300px;
 		display: inline-block;
 	}
+	#tippyTopShelf {
+		top: 200px;
+	}
 	#topShelf,
 	#middleShelf,
 	#bottomShelf {
-		top: 200px;
+		top: 230px;
 	}
 	#firstShelfContents{
 		top: 200px;
@@ -856,12 +927,37 @@ ul {
 		margin-left: 70px;
 		top: 110px;
 	}
+	#contactDiv {
+		top: 45%;
+		margin-left: 6%;
+		width: 250px;
+	}
+	#contactTitle {
+		font-size: 35px;
+	}
+	#contactInfo {
+		margin-top: 20px;
+		font-size: 20px;
+	}
 }
 
+/* green */
 @media only screen and (min-width: 741px) and (max-width: 870px) {
   body {
-    background-color: #d0efb1; /* green */
+    background-color: #d0efb1;
   }
+	.HomePageHeader {
+		font-size: 90px;
+		margin-top: 0px;
+	}
+	.HomePageSubHeader {
+		font-size: 18px;
+	}
+	#entirePage {
+		position: relative;
+		top: 100px;
+	}
+	#header,
 	#firstShelfContents,
 	#secondShelfContents,
 	#thirdShelfContents {
@@ -870,10 +966,13 @@ ul {
 		height: 300px;
 		display: inline-block;
 	}
+	#tippyTopShelf {
+		top: 70%;
+	}
 	#topShelf,
 	#middleShelf,
 	#bottomShelf {
-		top: 70%;
+		top: 83%;
 	}
 	#firstShelfContents{
 		top: 200px;
@@ -925,17 +1024,17 @@ ul {
 	#pearlPlant {
 		width: 20%;
 		margin-left: 100px;
-		top: 48%;
+		top: 50%;
 	}
 	#succulent {
 		width: 10%;
 		margin-left: 100px;
-		top: -11%;
+		top: -13%;
 	}
 	#leafyPlant {
 		margin-left: 120px;
 		width: 18%;
-		top: -10%;
+		top: -12%;
 	}
 	#DeskDiv {
 		width: 100%;
@@ -989,12 +1088,50 @@ ul {
 		margin-left: 10%;
 		top: 27%;
 	}
+	#contactDiv {
+		top: 400px;
+		margin-left: 3%;
+		width: 250px;
+	}
+	#contactTitle {
+		font-size: 30px;
+	}
+	#contactInfo {
+		margin-top: 20px;
+		font-size: 15px;
+		background-color: #dedee2;
+		display:inline;
+	}
+	.pencilsBlurb {
+		top: 0%;
+	}
+	.macbookBlurb {
+		margin-left:2%;
+		top: 20%;
+	}
+	.croissantBlurb {
+		margin-left: 0%;
+		top: 20%;
+	}
 }
 
+/* pink */
 @media only screen and (min-width: 641px) and (max-width: 740px) {
   body {
-    background-color: #f7caf6; /* pink */
+    background-color: #f7caf6;
   }
+	.HomePageHeader {
+		font-size: 120px;
+		margin-top: -100px;
+	}
+	.HomePageSubHeader {
+		font-size: 15px;
+	}
+	#entirePage {
+		position: relative;
+		top: 200px;
+	}
+	#header,
 	#firstShelfContents,
 	#secondShelfContents,
 	#thirdShelfContents {
@@ -1003,10 +1140,13 @@ ul {
 		height: 300px;
 		display: inline-block;
 	}
+	#tippyTopShelf {
+		top:80%;
+	}
 	#topShelf,
 	#middleShelf,
 	#bottomShelf {
-		top: 70%;
+		top: 80%;
 	}
 	#firstShelfContents{
 		top: 200px;
@@ -1063,7 +1203,7 @@ ul {
 	#succulent {
 		width: 70px;
 		margin-left: 80px;
-		top: 2%;
+		top: -2%;
 	}
 	#leafyPlant {
 		margin-left: 80px;
@@ -1122,13 +1262,55 @@ ul {
 		margin-left: 10%;
 		top: 25%;
 	}
+	#contactDiv {
+		top: 360px;
+		margin-left: 3%;
+		width: 250px;
+	}
+	#contactTitle {
+		font-size: 30px;
+		background-color: #dedee2;
+		display:inline-block;
+	}
+	#contactInfo {
+		margin-top: 20px;
+		font-size: 15px;
+		display:inline-block;
+	}
+	.pencilsBlurb {
+		top: 0%;
+	}
+	.macbookBlurb {
+		margin-left:2%;
+		top: 20%;
+	}
+	.croissantBlurb {
+		margin-left: 0%;
+		top: 20%;
+	}
 }
 
-/*Last/Smallest Tablet Style, but everything is fixed size*/
+/*Last and Smallest Tablet Style, but everything is fixed size*/
+/* orange */
 @media only screen and (min-width: 401px) and (max-width: 640px) {
   body {
-    background-color: #fccb71; /* orange*/
+    background-color: #fccb71;
   }
+	.HomePageHeader {
+		font-size: 90px;
+		margin-top: 0px;
+	}
+	.HomePageSubHeader {
+		font-size: 15px;
+		width: 500px;
+		text-align: center;
+		margin-top: 20px;
+	}
+	#entirePage {
+		position: relative;
+		top: 50px;
+	}
+	#header,
 	#firstShelfContents,
 	#secondShelfContents,
 	#thirdShelfContents {
@@ -1138,10 +1320,13 @@ ul {
 		height: 250px;
 		display: inline-block;
 	}
+	#tippyTopShelf{
+		top: 300px;
+	}
 	#topShelf,
 	#middleShelf,
 	#bottomShelf {
-		top: 200px;
+		top: 216px;
 	}
 	#firstShelfContents{
 		top: 300px;
@@ -1258,13 +1443,66 @@ ul {
 		margin-left: 60px;
 		top: 75px;
 	}
+	#contactDiv {
+		top: 310px;
+		margin-left: 10px;
+		width: 150px;
+	}
+	#contactTitle {
+		font-size: 20px;
+		display:inline-block;
+		margin-left: 6px;
+	}
+	#contactInfo {
+		margin-top: 12px;
+		font-size: 10px;
+		display:inline-block;
+		margin-left: 8px;
+	}
+	.pencilsBlurb {
+		top: 0%;
+	}
+	.macbookBlurb {
+		margin-left:2%;
+		top: 15%;
+	}
+	.croissantBlurb {
+		margin-left: 0%;
+		top: 30%;
+		width: 200px;
+	}
+	.blurbTitle {
+		font-size: 20px;
+	}
+	.blurbSubtitle {
+		font-size: 15px;
+	}
+	ul {
+		font-size: 10px;
+	}
+	#macbookBlurbSubtitle {
+		font-size: 10px;
+	}
 }
 
 /* Mobile Styles */
+/* Red */
 @media only screen and (max-width: 400px) {
   body {
-    background-color: #F09A9D; /* Red */
+    background-color: #F09A9D;
   }
+	.HomePageHeader {
+		font-size: 80px;
+		margin-top: 0px;
+	}
+	.HomePageSubHeader {
+		font-size: 15px;
+	}
+	#entirePage {
+		position: relative;
+		top: 50px;
+	}
+		#header,
 		#firstShelfContents,
 		#secondShelfContents,
 		#thirdShelfContents {
@@ -1276,10 +1514,13 @@ ul {
 			height: 200px;
 			display: inline-block;
 		}
+		#tippyTopShelf {
+			top: 260px;
+		}
 		#topShelf,
 		#middleShelf,
 		#bottomShelf {
-			top: 120px;
+			top: 135px;
 		}
 		#firstShelfContents{
 			top: 300px;
@@ -1336,7 +1577,7 @@ ul {
 		#succulent {
 			width: 50px;
 			margin-left: 2%;
-			top: -50px;
+			top: -45px;
 		}
 		#leafyPlant {
 			margin-left: 5%;
@@ -1395,6 +1636,22 @@ ul {
 			margin-left:2%;
 			top: 25%;
 		}
+		#contactDiv {
+			top: 355px;
+			margin-left: 10px;
+			width: 150px;
+		}
+		#contactTitle {
+			font-size: 15px;
+			display:inline-block;
+			margin-left: 6px;
+		}
+		#contactInfo {
+			margin-top: 6px;
+			font-size: 10px;
+			display:inline-block;
+			margin-left: 1px;
+		}
 		.lacrmBlurb {
 			min-height: 80%;
 			height: auto;
@@ -1409,19 +1666,142 @@ ul {
 			margin-right: none;
 			margin-left: 7%;
 		}
+		.ixStyleBlurb {
+			min-height: 80%;
+			height: auto;
+			width: 80%;
+			z-index: 16;
+			background: white;
+			border: white 3px solid;
+			border-radius: 20px;
+			box-shadow: 0px 5px 5px gray;
+			position: absolute;
+			margin: none;
+			margin-right: none;
+			margin-left: -100px;
+		}
+		.ntdBlurb {
+			min-height: 80%;
+			height: auto;
+			width: 80%;
+			z-index: 16;
+			background: white;
+			border: white 3px solid;
+			border-radius: 20px;
+			box-shadow: 0px 5px 5px gray;
+			position: absolute;
+			margin-right: none;
+			margin-left: -210px;
+			margin-top: -30px;
+		}
+		.baseballCapBlurb {
+			min-height: 80%;
+			height: auto;
+			width: 80%;
+			z-index: 16;
+			background: white;
+			border: white 3px solid;
+			border-radius: 20px;
+			box-shadow: 0px 5px 5px gray;
+			position: absolute;
+			margin: none;
+			margin-right: none;
+			margin-left: 7%;
+		}
+		.trophyBlurb {
+			min-height: 80%;
+			height: auto;
+			width: 80%;
+			z-index: 16;
+			background: white;
+			border: white 3px solid;
+			border-radius: 20px;
+			box-shadow: 0px 5px 5px gray;
+			position: absolute;
+			margin: none;
+			margin-right: none;
+			margin-left: -80px;
+		}
+		.mountainLakesBlurb {
+			min-height: 80%;
+			height: auto;
+			width: 80%;
+			z-index: 16;
+			background: white;
+			border: white 3px solid;
+			border-radius: 20px;
+			box-shadow: 0px 5px 5px gray;
+			position: absolute;
+			margin: none;
+			margin-right: none;
+			margin-left: -160px;
+		}
+		.booksBlurb {
+			min-height: 80%;
+			height: auto;
+			width: 80%;
+			z-index: 16;
+			background: white;
+			border: white 3px solid;
+			border-radius: 20px;
+			box-shadow: 0px 5px 5px gray;
+			position: absolute;
+			margin-right: none;
+			margin-left: -250px;
+			margin-top: -10px;
+		}
+		.pearlPlantBlurb {
+			min-height: 80%;
+			height: auto;
+			width: 80%;
+			z-index: 16;
+			background: white;
+			border: white 3px solid;
+			border-radius: 20px;
+			box-shadow: 0px 5px 5px gray;
+			position: absolute;
+			margin: none;
+			margin-right: none;
+			margin-left: 7%;
+		}
+		.succulentBlurb {
+			min-height: 80%;
+			height: auto;
+			width: 80%;
+			z-index: 16;
+			background: white;
+			border: white 3px solid;
+			border-radius: 20px;
+			box-shadow: 0px 5px 5px gray;
+			position: absolute;
+			margin: none;
+			margin-right: none;
+			margin-left: -130px;
+		}
+		.leafyPlantBlurb {
+			min-height: 80%;
+			height: auto;
+			width: 80%;
+			z-index: 16;
+			background: white;
+			border: white 3px solid;
+			border-radius: 20px;
+			box-shadow: 0px 5px 5px gray;
+			position: absolute;
+			margin-right: none;
+			margin-left: -190px;
+			margin-top: -10px;
+		}
 		.blurbTitle {
 			font-family: 'Oswald', sans-serif;
 			font-size: 20px;
 			margin-top: 10px;
 			text-align: center;
-			background-color: white;
 		}
-
 		.blurbSubtitle {
 			font-family: 'Lato', sans-serif;
 			font-size: 15px;
 			text-align: center;
-			background-color: white;
 			margin-top: -10px;
 		}
 
@@ -1431,6 +1811,30 @@ ul {
 			background-color: white;
 			margin-left: 15px;
 			line-height: 20px;
+		}
+		.cameraBlurb{
+			font-size: 10px;
+			top: -60px;
+			width: 200px;
+			margin-left: -10px;
+		}
+		.pencilsBlurb {
+			top: -50%;
+			margin-left: -80px;
+		}
+		.macbookBlurb {
+			margin-left:2%;
+			top: -50px;
+			width: 200px;
+		}
+		.croissantBlurb {
+			margin-left: -20px;
+			top: -70px;
+			width: 100px;
+		}
+		#macbookBlurbSubtitle {
+			font-size: 10px;
+			color:black;
 		}
 	}
 
@@ -1476,21 +1880,21 @@ ul {
 	}
 
 	/* Page Footer */
-		.pageFooter {
-			top: 600px;
-			position: relative;
-			width: auto;
-			left: 20%;
-		}
+	.pageFooter {
+		top: 600px;
+		position: relative;
+		width: auto;
+		left: 20%;
+	}
 
-		.logo {
-			height: 200px;
-			margin: 40px;
-			display: inline;
-			float: left;
-		}
+	.logo {
+		height: 200px;
+		margin: 40px;
+		display: inline;
+		float: left;
+	}
 
-		.Lindsay {
+	.Lindsay {
 			color: #353333;
 			font-size: 60px;
 			font-family: 'Oswald', sans-serif;
@@ -1502,7 +1906,7 @@ ul {
 			margin-top: 45px;;
 		}
 
-		.contact {
+	.contact {
 		font-family: 'Lato', sans-serif;
 		color: #353333;
 		font-size: 15px;
@@ -1516,18 +1920,18 @@ ul {
 	}
 
 	/* Specifically on the 'Education' page */
-		#psychClasses {
-			font-family: 'Lato', sans-serif;
-			color: #353333;
-			font-size: 15px;
-			line-height: 30px;
-			letter-spacing: 2px;
-			font-weight: lighter;
-			position: static;
-			display: none;
-		}
+	#psychClasses {
+		font-family: 'Lato', sans-serif;
+		color: #353333;
+		font-size: 15px;
+		line-height: 30px;
+		letter-spacing: 2px;
+		font-weight: lighter;
+		position: static;
+		display: none;
+	}
 
-		#marketingClasses {
+	#marketingClasses {
 			font-family: 'Lato', sans-serif;
 			color: #353333;
 			font-size: 15px;
@@ -1538,7 +1942,7 @@ ul {
 			display: none;
 		}
 
-		#designClasses {
+	#designClasses {
 		font-family: 'Lato', sans-serif;
 		color: #353333;
 		font-size: 15px;

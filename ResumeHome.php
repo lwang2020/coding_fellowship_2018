@@ -1,5 +1,5 @@
 <?php
-include ('include/ResumeInclude.php');
+	include ('include/ResumeInclude.php');
 ?>
 
 <html>
@@ -7,7 +7,7 @@ include ('include/ResumeInclude.php');
 	<head>
 		<title>Lindsay Wang | Home</title>
 		<link rel='stylesheet' href='ResumeDesign.css' />
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway|Josefin+Sans|Montserrat" rel="stylesheet">
 		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 	</head>
 
@@ -20,18 +20,15 @@ include ('include/ResumeInclude.php');
 		</footer>
 	</div>
 
-		<div id = 'entirePage'>
-			<div class= 'page-wrap'>
-				<h1 class= 'HomePageHeader'> Lindsay's Resume </h1>
-					<h2 class= 'HomePageSubHeader'>A work in progress </h1>
-			</div>
-
-			<div class= 'page'>
+		<div id= 'entirePage'>
+				<div id= 'header'>
+					<object data="shelf1WorkExperience.svg" type="image/svg+xml" class='shelf' id='tippyTopShelf'></object>
+					<h1 class= 'HomePageHeader'>  LINDSAY WANG </h1>
+						<h2 class= 'HomePageSubHeader'> CLICK <a id="resumeDownloadLink" href="LindsayWangResumeDownload.pdf" target="_blank">HERE</a> FOR A DOWNLOADABLE PDF OF MY RESUME ON A SINGLE PAGE </h1>
+				</div>
 
 		<div id= 'firstShelfContents'>
-
-			<img src= 'shelf2.svg' class= 'shelf' id= 'topShelf'>
-
+			<object data="shelf2Education.svg" type="image/svg+xml" class='shelf' id='topShelf'></object>
 			<div id= '1' class = 'lacrmBlurb blurb'>
 				<p class = 'blurbTitle'> LESS ANNOYING CRM </p> <br>
 				<p class= 'blurbSubtitle'> Coding Fellow </p> <br>
@@ -68,8 +65,7 @@ include ('include/ResumeInclude.php');
 		</div>
 
 		<div id='secondShelfContents'>
-			<img src= "shelf2.svg" class= 'shelf' id='middleShelf'>
-
+			<object data="shelf3LeadershipRoles.svg" type="image/svg+xml" class='shelf' id='middleShelf'></object>
 			<div id= '4' class = 'baseballCapBlurb blurb'>
 				<p class = 'blurbTitle'> WASHINGTON UNIVERSITY IN ST. LOUIS </p> <br>
 				<p class = 'blurbSubtitle'> Junior </p> <br>
@@ -113,8 +109,7 @@ include ('include/ResumeInclude.php');
 		</div>
 
 		<div id='thirdShelfContents'>
-			<img src= "shelf2.svg" class= 'shelf' id='bottomShelf'>
-
+			<object data="shelf4Skills.svg" type="image/svg+xml" class='shelf' id='bottomShelf'></object>
 			<div id= '8' class = 'pearlPlantBlurb blurb'>
 				<p class = 'blurbTitle'> DIRECTOR OF MARKETING </p> <br>
 				<p class = 'blurbSubtitle'>	for the Washington University Amateurs A Cappella </p> <br>
@@ -1110,126 +1105,138 @@ include ('include/ResumeInclude.php');
 					<p class = 'blurbTitle'> PHOTOGRAPHER </p> <br>
 					<p class = 'blurbSubtitle'> My photography website: </p> <br>
 					<img src= 'LindsayAthenaPhotography.png' id='photographyWebsiteButton' input type= 'button' onclick= "window.location.href= 'https://lindsayathenaphoto.wixsite.com/lindsayathenaphoto'"/>
-					<button onclick = 'HideEverything()' class = 'Xout'> X </button>
+					<button onclick = 'HideEverything()' class = 'Xout'> &nbsp; X &nbsp; </button>
 				</div>
 				<img src= "camera2.svg" id='camera' class = 'object' onclick = "RunThroughBlurbs('eleventhBlurb')">
 
 				<div id= '12' class = 'pencilsBlurb blurb'>
-					<p class = 'blurbSubtitle'><br> Excellent at design and creative marketing </p>
-					<button onclick = 'HideEverything()' class = 'Xout'> X </button>
+					<p class = 'blurbSubtitle'><br> <br> Excellent at design and creative marketing </p>
+					<button onclick = 'HideEverything()' class = 'Xout'> &nbsp; X &nbsp; </button>
 				</div>
 				<img src= "pencils2.svg" id='pencils' class = 'object' onclick = "RunThroughBlurbs('twelfthBlurb')">
 
 				<div id= '13' class = 'macbookBlurb blurb'>
-					<p class = 'blurbSubtitle'><br> Video editing, Microsoft Word, Powerpoint, Excel, Photoshop, Adobe Illustrator </p>
-					<button onclick = 'HideEverything()' class = 'Xout'> X </button>
+					<p class = 'blurbSubtitle' id= 'macbookBlurbSubtitle'><br> <br> <br> Video editing, Microsoft Word, Powerpoint, Excel, Photoshop, Adobe Illustrator </p>
+					<button onclick = 'HideEverything()' class = 'Xout'> &nbsp; X &nbsp; </button>
 				</div>
 				<img src= "macbook3.svg" id='macbook' class = 'object' onclick = "RunThroughBlurbs('thirteenthBlurb')">
 
 				<div id= '14' class = 'croissantBlurb blurb'>
-					<p class = 'blurbSubtitle'><br> Fluent in Mandarin, proficient in French and Spanish <p>
-					<button onclick = 'HideEverything()' class = 'Xout'> X </button>
+					<p class = 'blurbSubtitle' style= 'text-align: right'><br><br> Fluent in Mandarin, proficient in French and Spanish <p>
+					<button onclick = 'HideEverything()' class = 'Xout'> &nbsp; X &nbsp; </button>
 				</div>
 				<img src= "croissant2.svg" id='croissant' class = 'object' onclick = "RunThroughBlurbs('fourteenthBlurb')">
 			</div>
+				<div id='contactDiv'>
+					<p id='contactTitle'> CONTACT ME: </p>
+					<p id='contactInfo'>
+						<br>
+						EMAIL: <br> <br>
+						lindsay.wang@wustl.edu <br> <br> <br>
+						&nbsp; ADDRESS: <br> <br>
+						&nbsp; 6515 Wydown Blvd, <br>
+						&nbsp; St. Louis MO 63105 <br>
+					</p>
+				</div>
 				<img src= "desk1.svg" id= 'desk'>
 				<img src= "chair3.svg" id='chair'>
-			</div>
+
+		</div>
 	</body>
 </html>
 
-<script src="/include/jquery.js"></script>
+<script src="jquery.js"></script>
 <script type = 'text/javascript'>
 
-function HideEverything(){
-	$('.blurb').hide();
-}
+	function HideEverything(){
+		$('.blurb').hide();
+	}
 
-function showBlurb(blurb) {
-	var a = document.getElementById(blurb);
-		if (a.style.display === 'none') {
-				$(a).fadeIn(500);
-		} else {
-				a.style.display = 'none';
+	function showBlurb(blurb) {
+		var a = document.getElementById(blurb);
+			if (a.style.display === 'none') {
+					$(a).fadeIn(500);
+			} else {
+					a.style.display = 'none';
+			}
+		}
+
+	HideEverything();
+
+	function RunThroughBlurbs (blurbNumber) {
+		if (blurbNumber === 'firstBlurb') {
+			HideEverything();
+			showBlurb('1');
+		}
+		else if (blurbNumber === 'secondBlurb') {
+			HideEverything();
+			showBlurb('2');
+		}
+		else if (blurbNumber === 'thirdBlurb') {
+			HideEverything();
+			showBlurb('3');
+		}
+		else if (blurbNumber === 'fourthBlurb') {
+			HideEverything();
+			showBlurb('4');
+		}
+		else if (blurbNumber === 'fifthBlurb') {
+			HideEverything();
+			showBlurb('5');
+		}
+		else if (blurbNumber === 'sixthBlurb') {
+			HideEverything();
+			showBlurb('6');
+		}
+		else if (blurbNumber === 'seventhBlurb') {
+			HideEverything();
+			showBlurb('7');
+		}
+		else if (blurbNumber === 'eighthBlurb') {
+			HideEverything();
+			showBlurb('8');
+		}
+		else if (blurbNumber === 'ninthBlurb') {
+			HideEverything();
+			showBlurb('9');
+		}
+		else if (blurbNumber === 'tenthBlurb') {
+			HideEverything();
+			showBlurb('10');
+		}
+		else if (blurbNumber === 'eleventhBlurb') {
+			HideEverything();
+			showBlurb('11');
+		}
+		else if (blurbNumber === 'twelfthBlurb') {
+			HideEverything();
+			showBlurb('12');
+		}
+		else if (blurbNumber === 'thirteenthBlurb') {
+			HideEverything();
+			showBlurb('13');
+		}
+		else if (blurbNumber === 'fourteenthBlurb') {
+			HideEverything();
+			showBlurb('14');
+		}
+		else {
+			HideEverything();
 		}
 	}
 
-HideEverything();
+	//Hides the blurb if you click outside of it
 
-function RunThroughBlurbs (blurbNumber) {
-	if (blurbNumber === 'firstBlurb') {
-		HideEverything();
-		showBlurb('1');
-	}
-	else if (blurbNumber === 'secondBlurb') {
-		HideEverything();
-		showBlurb('2');
-	}
-	else if (blurbNumber === 'thirdBlurb') {
-		HideEverything();
-		showBlurb('3');
-	}
-	else if (blurbNumber === 'fourthBlurb') {
-		HideEverything();
-		showBlurb('4');
-	}
-	else if (blurbNumber === 'fifthBlurb') {
-		HideEverything();
-		showBlurb('5');
-	}
-	else if (blurbNumber === 'sixthBlurb') {
-		HideEverything();
-		showBlurb('6');
-	}
-	else if (blurbNumber === 'seventhBlurb') {
-		HideEverything();
-		showBlurb('7');
-	}
-	else if (blurbNumber === 'eighthBlurb') {
-		HideEverything();
-		showBlurb('8');
-	}
-	else if (blurbNumber === 'ninthBlurb') {
-		HideEverything();
-		showBlurb('9');
-	}
-	else if (blurbNumber === 'tenthBlurb') {
-		HideEverything();
-		showBlurb('10');
-	}
-	else if (blurbNumber === 'eleventhBlurb') {
-		HideEverything();
-		showBlurb('11');
-	}
-	else if (blurbNumber === 'twelfthBlurb') {
-		HideEverything();
-		showBlurb('12');
-	}
-	else if (blurbNumber === 'thirteenthBlurb') {
-		HideEverything();
-		showBlurb('13');
-	}
-	else if (blurbNumber === 'fourteenthBlurb') {
-		HideEverything();
-		showBlurb('14');
-	}
-	else {
-		HideEverything();
-	}
-}
+	$(document).ready(function(){
+	    $('#entirePage').mouseup(function(e){
+	    HideEverything();
+	    });
 
-//Hides the blurb if you click outside of it
+			$('.blurb').mouseup(function(e){
+				e.stopPropagation();
+			});
 
-$(document).ready(function(){
-    $('#entirePage').mouseup(function(e){
-    HideEverything();
-    });
-
-		$('.blurb').mouseup(function(e){
-			e.stopPropagation();
-		});
-
-		//setTimeout()
-});
+			//setTimeout()
+	});
 
 </script>
