@@ -1,4 +1,4 @@
- 
+
 <?php
 include ('include/ResumeInclude.php');
 $DisplayPage = DisplayPage();
@@ -11,7 +11,7 @@ echo "
 
 <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
-	<body>
+	<body style='background-color:white'>
 		<div class = 'greenBox'>
 
 		<div class='NavBar'>".$DisplayPage[$_REQUEST['page']]['NavigationBar']."</div>

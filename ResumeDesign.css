@@ -1,4 +1,4 @@
- 
+
 /* Universal Selector */
 * {
   margin: 0;
@@ -819,8 +819,8 @@ ul {
 /* Desktop Styles, fixed sizes */ /* Blue */
 @media only screen and (min-width: 961px) {
   body {
-    background-color: #e5f0fc;
-  }
+		background-color: #e5f0fc;
+	}
 	.HomePageHeader {
 		font-size: 100px;
 		margin-top: 50px;
