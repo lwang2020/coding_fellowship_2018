@@ -98,9 +98,7 @@
 			<div id= '7' class = 'booksBlurb blurb'>
 				<p class = 'blurbTitle'> COURSES </p> <br>
 				<ul>
-					Philosophy-Neuroscience-Psychology Classes <br>
- 					Marketing Classes <br>
- 					Design Classes <br>
+					I have taken various courses that span from design classes, to marketing classes, to philosophy and psychology classes. For the complete categorized list of classes, look under "Relevant Courses" on <a href ='http://lindsay.codingfellowship.com/ResumeStage.php?page=Education'>this page</a>. 
 				</ul>
 				<button onclick = 'HideEverything()' class = 'Xout'> X </button>
 			</div>
