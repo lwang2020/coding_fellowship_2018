@@ -1,5 +1,5 @@
 <?php
-  
+
 function DisplayPage(){
 	return array(
 		'Education'=>array(
@@ -88,7 +88,7 @@ function DisplayPage(){
 		",
 			'NavigationBar'=>
 				"
-					<a class='link' href='http://lindsay.codingfellowship.com/ResumeHome.php'>HOME</a> &emsp; &emsp;
+					<a class='link' href='http://lindsay.codingfellowship.com/index.php'>HOME</a> &emsp; &emsp;
 					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Leadership'>LEADERSHIP</a> &emsp; &emsp;
 					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Experience'>EXPERIENCE</a> &emsp; &emsp;
 					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Skills'>SKILLS</a>
@@ -122,7 +122,7 @@ function DisplayPage(){
 			",
 			'NavigationBar'=>
 					"
-						<a class='link' href='http://lindsay.codingfellowship.com/ResumeHome.php'>HOME</a> &emsp; &emsp;
+						<a class='link' href='http://lindsay.codingfellowship.com/index.php'>HOME</a> &emsp; &emsp;
 						<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Education'>EDUCATION</a> &emsp; &emsp;
 						<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Experience'>EXPERIENCE</a> &emsp; &emsp;
 						<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Skills'>SKILLS</a>
@@ -152,7 +152,7 @@ function DisplayPage(){
 			",
 			'NavigationBar'=>
 				"
-					<a class='link' href='http://lindsay.codingfellowship.com/ResumeHome.php'>HOME</a> &emsp; &emsp;
+					<a class='link' href='http://lindsay.codingfellowship.com/index.php'>HOME</a> &emsp; &emsp;
 					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Education'>EDUCATION</a> &emsp; &emsp;
 					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Leadership'>LEADERSHIP</a> &emsp; &emsp;
 					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Skills'>SKILLS</a>
@@ -173,7 +173,7 @@ function DisplayPage(){
 			",
 			'NavigationBar'=>
 				"
-					<a class='link' href='http://lindsay.codingfellowship.com/ResumeHome.php'>HOME</a> &emsp; &emsp;
+					<a class='link' href='http://lindsay.codingfellowship.com/index.php'>HOME</a> &emsp; &emsp;
 					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Education'>EDUCATION</a> &emsp; &emsp;
 					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Leadership'>LEADERSHIP</a> &emsp; &emsp;
 					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Experience'>EXPERIENCE</a>

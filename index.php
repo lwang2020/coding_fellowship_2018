@@ -1,7 +1,7 @@
 <?php
 	include ('include/ResumeInclude.php');
 ?>
- 
+
 <html>
 
 	<head>
@@ -11,7 +11,7 @@
 		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 	</head>
 
-	<body>
+	<body style='background-color:#e5f0fc'>
 		<div id="splashscreen">
 			<div id="loadingCase">
   			<div id="loadingJuice"></div>
