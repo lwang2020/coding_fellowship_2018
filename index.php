@@ -98,7 +98,7 @@
 			<div id= '7' class = 'booksBlurb blurb'>
 				<p class = 'blurbTitle'> COURSES </p> <br>
 				<ul>
-					I have taken various courses that span from design classes, to marketing classes, to philosophy and psychology classes. For the complete categorized list of classes, look under "Relevant Courses" on <a href ='http://lindsay.codingfellowship.com/ResumeStage.php?page=Education'>this page</a>. 
+					I have taken various courses that span from design classes, to marketing classes, to philosophy and psychology classes. For the complete categorized list of classes, look under "Relevant Courses" on <a href ='http://lindsay.codingfellowship.com/ResumeStage.php?page=Education'>this page</a>.
 				</ul>
 				<button onclick = 'HideEverything()' class = 'Xout'> X </button>
 			</div>
@@ -1138,6 +1138,7 @@
 				<img src= "desk1.svg" id= 'desk'>
 				<img src= "chair3.svg" id='chair'>
 				<footer id='homePageNavBar'>
+					<p> a slightly less interesting way to navigate : </p> <br>
 					<a class='linkToOtherPages' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Education'>EDUCATION</a>
 					<a class='linkToOtherPages' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Leadership'>LEADERSHIP</a>
 					<a class='linkToOtherPages' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Experience'>EXPERIENCE</a>
