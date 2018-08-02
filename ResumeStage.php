@@ -19,7 +19,7 @@ echo "
 			<div class = 'titleBorder'>
 				<h1 class = 'PageTitle'> &emsp;".$DisplayPage[$_REQUEST['page']]['Title']."<h1>
 			</div>
-		<div class = 'pageContent'>
+		<div class = 'pageContent'> <br>
 			".$DisplayPage[$_REQUEST['page']]['Content']."
 
 		<div class = 'pageFooter'>
