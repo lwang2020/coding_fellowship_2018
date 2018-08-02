@@ -1103,7 +1103,7 @@
 				<div id= '11' class = 'cameraBlurb blurb'>
 					<p class = 'blurbTitle'> PHOTOGRAPHER </p> <br>
 					<p class = 'blurbSubtitle'> My photography website: </p> <br>
-					<img src= 'LindsayAthenaPhotography.png' id='photographyWebsiteButton' input type= 'button' onclick= "window.location.href= 'https://lindsayathenaphoto.wixsite.com/lindsayathenaphoto' target='_blank'/>
+					<img src= 'LindsayAthenaPhotography.png' id='photographyWebsiteButton' input type= 'button' onclick= "window.location.href= 'https://lindsayathenaphoto.wixsite.com/lindsayathenaphoto'"/>
 					<button onclick = 'HideEverything()' class = 'Xout'> &nbsp; X &nbsp; </button>
 				</div>
 				<img src= "camera2.svg" id='camera' class = 'object' onclick = "RunThroughBlurbs('eleventhBlurb')">
