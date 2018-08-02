@@ -165,7 +165,8 @@ function DisplayPage(){
 			'Content'=>"
 					<p>
 						• Video editing, Microsoft Word, Powerpoint, Excel, Photoshop, Adobe Illustrator <br>
-						• Excellent at design and creative marketing. Proficient in HTML, CSS, PHP, Javascript, and MySQL <br>
+						• Excellent at design and creative marketing <br>
+						• Proficient in HTML, CSS, PHP, Javascript, and MySQL <br>
 						• Photographer <br>
 						• Fluent in Mandarin, proficient in French and Spanish <br>
 					</p>
