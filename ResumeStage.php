@@ -1,4 +1,4 @@
-
+ 
 <?php
 include ('include/ResumeInclude.php');
 $DisplayPage = DisplayPage();
