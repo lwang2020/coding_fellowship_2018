@@ -1,5 +1,173 @@
 
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Stuff on the pages */
+
+/* blockquote was anything on the pages that was in bullet points, except the classes */
+	blockquote {
+			color: #353333;
+			text-align:left;
+			font-size: 20px;
+			font-family: 'Lato', sans-serif;
+			margin-left: 20px;
+		}
+
+	.PageTitle {
+		color: #353333;
+		z-index: 1;
+		font-size: 50px;
+		font-family: 'Oswald', sans-serif;
+		text-align: left;
+		border-style: solid;
+		border-color: #353333;
+		width: 50%;
+		margin-left: 15%;
+	}
+
+	.greenBox {
+		background-color: #d5edc7;
+		height: 400px;
+		width: 100%;
+		z-index: 0;
+		position: relative;
+		padding: 30px;
+		margin: none;
+	}
+
+	.pageContent {
+		position: absolute;
+		z-index: 2;
+		width: 50%;
+		left: 40%;
+		font-family: 'Lato', sans-serif;
+		color: #353333;
+		font-size: 20px;
+		line-height: 30px;
+		overflow: scroll;
+	}
+
+
+/* Page Footer */
+	.pageFooter {
+		top: 800px;
+		position: relative;
+		width: auto;
+		left: 20%;
+	}
+
+	.logo {
+		height: 200px;
+		margin: 40px;
+		display: inline;
+		float: left;
+	}
+
+	.Lindsay {
+			color: #353333;
+			font-size: 60px;
+			font-family: 'Oswald', sans-serif;
+			text-align: left;
+			display: inline-block;
+			position: relative;
+			letter-spacing: 6px;
+			margin-bottom: 0;
+			margin-top: 45px;;
+		}
+
+	.contact {
+		font-family: 'Lato', sans-serif;
+		color: #353333;
+		font-size: 15px;
+		line-height: 30px;
+		letter-spacing: 2px;
+		margin: none;
+		display: block;
+		position: relative;
+		font-weight: lighter;
+		margin-top: 0;
+	}
+
+	/* Specifically on the 'Education' page */
+	#psychClasses {
+		font-family: 'Lato', sans-serif;
+		color: #353333;
+		font-size: 15px;
+		line-height: 30px;
+		letter-spacing: 2px;
+		font-weight: lighter;
+		position: relative;
+		display: none;
+		z-index: 10;
+		width: 37%;
+		margin-left: 3%;
+	}
+
+	#marketingClasses {
+			font-family: 'Lato', sans-serif;
+			color: #353333;
+			font-size: 15px;
+			line-height: 30px;
+			letter-spacing: 2px;
+			font-weight: lighter;
+			position: relative;
+			display: none;
+			width: 37%;
+			margin-left: 3%;
+		}
+
+	#designClasses {
+		font-family: 'Lato', sans-serif;
+		color: #353333;
+		font-size: 15px;
+		line-height: 30px;
+		letter-spacing: 2px;
+		font-weight: lighter;
+		position: relative;
+		display: none;
+		width: 37%;
+		margin-left: 3%;
+	}
+
+
+/* Splash Screen */
+
+#splashscreen {
+	width:100%;
+	background-color: rgba(255, 255, 255, 0.95);
+	position: fixed;
+	z-index: 90;
+}
+
+.resumeSplashScreen {
+	height: 100%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#loadingCase {
+    width: 100%;
+    background-color: white;
+		display:block;
+		margin-left: auto;
+		margin-right: auto;
+		z-index: 4;
+}
+
+#loadingJuice {
+    width: 1%;
+    height: 5px;
+    background-color: #8eb7f9;
+}
+
 /* Home Page */
+
 .HomePageHeader {
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
@@ -13,6 +181,7 @@
 #resumeDownloadLink:link {
 	color:red
 }
+
 #resumeDownloadLink:visited {
 	color:red
 }
@@ -21,11 +190,14 @@
 	color: #fc888d;
 }
 
-.page-wrap {
-  margin-bottom: 50px;
+.entirePage {
+	margin: none;
+	height: 100%;
+	border:red 1px solid;
 }
 
 /* Navigation Bar */
+
 .NavBar {
     background-color:none;
     overflow: auto;
@@ -37,6 +209,34 @@
 		border-top: 3px #353333 solid;
 		border-bottom: 3px #353333 solid;
 		position:static;
+		margin-bottom: 30px;
+}
+
+#homePageNavBar {
+	background-color:none;
+	overflow: auto;
+	text-align: center;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	border-top: 3px #353333 solid;
+	border-bottom: 3px #353333 solid;
+	display: block;
+	position: absolute;
+	width: 100%;
+}
+
+#homePageNavBar a {
+	background-color: none;
+	color: #353333;
+	text-decoration: none;
+	overflow: hidden;
+}
+
+#homePageNavBar a:hover {
+	background-color: none;
+	color: #989aa0;
 }
 
 .NavBar a {
@@ -57,8 +257,8 @@
 	overflow: hidden;
 }
 
+/* Blurbs */
 
-/* BLURB STUFF */
 .Xout {
 	right: 6px;
 	position: absolute;
@@ -294,7 +494,7 @@ ul {
 	margin: none;
 	margin-left: -15%;
 	display: inline-block;
-	top: 15%;
+	top:0%;
 }
 
 .macbookBlurb {
@@ -327,14 +527,8 @@ ul {
 	top: 45%;
 }
 
-/* Universal Selector */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Base styles that apply to drawn object */
+
 .page {
 	width: 100%;
 	margin-left: auto;
@@ -479,6 +673,7 @@ ul {
 #DeskDiv {
 	position: absolute;
 	z-index: 30;
+	margin: none;
 }
 
 #desk {
@@ -518,6 +713,7 @@ ul {
 	margin-right: none;
 	margin-left: 35%;
 	position: relative;
+	margin-bottom: 0;
 }
 
 #desktop {
@@ -573,8 +769,8 @@ ul {
 }
 
 
-
 /* Animation */
+
 #lacrm:hover, #IxStyle:hover, #ntd:hover, #BaseballCap:hover, #trophy:hover, #mountainLakes:hover, #books:hover,
 #pearlPlant:hover, #succulent:hover, #leafyPlant:hover, #camera:hover, #pencils:hover, #macbook:hover, #croissant:hover {
   /* Toggle our animation play state to running when we are hovering over our sticker */
@@ -620,8 +816,7 @@ ul {
 	  }
 	}
 
-/* Desktop Styles, fixed sizes */
-/* Blue */
+/* Desktop Styles, fixed sizes */ /* Blue */
 @media only screen and (min-width: 961px) {
   body {
     background-color: #e5f0fc;
@@ -717,7 +912,7 @@ ul {
 	#DeskDiv {
 		width: 1000px;
 		top: 1200px;
-		height: 1000px;
+		height: 800px;
 		margin-left: 10%;
 	}
 	#desk {
@@ -777,10 +972,12 @@ ul {
 		margin-top: 20px;
 		font-size: 20px;
 	}
+	#homePageNavBar {
+		bottom: -250px;
+	}
 }
 
-/* Tablet Styles, from large to small. The first three are responsive */
-/* Yellow */
+/* Tablet Styles, from large to small. The first three are responsive */ /* Yellow */
 @media only screen and (min-width: 871px) and (max-width: 960px) {
   body {
     background-color: #fcf883;
@@ -938,6 +1135,9 @@ ul {
 	#contactInfo {
 		margin-top: 20px;
 		font-size: 20px;
+	}
+	#homePageNavBar {
+		bottom: 0px;
 	}
 }
 
@@ -1103,7 +1303,7 @@ ul {
 		display:inline;
 	}
 	.pencilsBlurb {
-		top: 0%;
+		top: -10%;
 	}
 	.macbookBlurb {
 		margin-left:2%;
@@ -1113,6 +1313,9 @@ ul {
 		margin-left: 0%;
 		top: 20%;
 	}
+	#homePageNavBar {
+		bottom: 0px;
+	}
 }
 
 /* pink */
@@ -1120,6 +1323,12 @@ ul {
   body {
     background-color: #f7caf6;
   }
+	.pageFooter {
+		margin-top: 100px;
+	}
+	.logo {
+		display: none;
+	}
 	.HomePageHeader {
 		font-size: 120px;
 		margin-top: -100px;
@@ -1278,7 +1487,7 @@ ul {
 		display:inline-block;
 	}
 	.pencilsBlurb {
-		top: 0%;
+		top: -20%;
 	}
 	.macbookBlurb {
 		margin-left:2%;
@@ -1288,14 +1497,37 @@ ul {
 		margin-left: 0%;
 		top: 20%;
 	}
+	#homePageNavBar {
+		bottom: 100px;
+	}
 }
 
-/*Last and Smallest Tablet Style, but everything is fixed size*/
-/* orange */
+/*Last and Smallest Tablet Style, but everything is fixed size*/ /* orange */
 @media only screen and (min-width: 401px) and (max-width: 640px) {
   body {
     background-color: #fccb71;
   }
+	.logo {
+		display: none;
+	}
+	.pageFooter {
+		margin-top: 400px;
+	}
+	.PageTitle {
+		border: none;
+	}
+	#psychClasses {
+		font-size: 10px;
+		line-height: 20px;
+	}
+	#marketingClasses {
+		font-size: 10px;
+		line-height: 20px;
+	}
+	#designClasses {
+		font-size: 10px;
+		line-height: 20px;
+	}
 	.HomePageHeader {
 		font-size: 90px;
 		margin-top: 0px;
@@ -1460,7 +1692,8 @@ ul {
 		margin-left: 8px;
 	}
 	.pencilsBlurb {
-		top: 0%;
+		top: -100px;
+		left: 200px;
 	}
 	.macbookBlurb {
 		margin-left:2%;
@@ -1483,14 +1716,50 @@ ul {
 	#macbookBlurbSubtitle {
 		font-size: 10px;
 	}
+	#homePageNavBar {
+		bottom: -180px;
+	}
 }
 
-/* Mobile Styles */
-/* Red */
+/* Mobile Styles */ /* Red */
 @media only screen and (max-width: 400px) {
   body {
     background-color: #F09A9D;
   }
+	.logo {
+		display: none;
+	}
+	.pageFooter {
+		margin-top: 300px;
+		width: 100%;
+	}
+	.pageContent {
+		font-size: 15px;
+	}
+	blockquote {
+		font-size: 15px;
+	}
+	.PageTitle {
+		border: none;
+	}
+	#psychClasses {
+		font-size: 10px;
+		line-height: 20px;
+	}
+	#marketingClasses {
+		font-size: 10px;
+		line-height: 20px;
+	}
+	#designClasses {
+		font-size: 10px;
+		line-height: 20px;
+	}
+	.Lindsay {
+		font-size: 40px;
+	}
+	.contact {
+		font-size: 10px;
+	}
 	.HomePageHeader {
 		font-size: 80px;
 		margin-top: 0px;
@@ -1819,7 +2088,7 @@ ul {
 			margin-left: -10px;
 		}
 		.pencilsBlurb {
-			top: -50%;
+			top: -110%;
 			margin-left: -80px;
 		}
 		.macbookBlurb {
@@ -1836,119 +2105,7 @@ ul {
 			font-size: 10px;
 			color:black;
 		}
-	}
-
-/* Stuff on the pages */
-
-	/* anything that was in bullet points */
-	blockquote {
-			color: #353333;
-			text-align:left;
-			font-size: 20px;
-			font-family: 'Lato', sans-serif;
+		#homePageNavBar {
+			bottom: -100px;
 		}
-
-	.PageTitle {
-		color: #353333;
-		z-index: 1;
-		font-size: 50px;
-		font-family: 'Oswald', sans-serif;
-		text-align: left;
-		border-style: solid;
-		border-color: #353333;
-		width: 600px;
-		margin-left: 15%;
-	}
-
-	.greenBox {
-		background-color: #d5edc7;
-		height: 400px;
-		z-index: 0;
-		position: relative;
-		padding: 30px;
-	}
-
-	.pageContent {
-		position: absolute;
-		z-index: 2;
-		width: 700px;
-		left: 40%;
-		font-family: 'Lato', sans-serif;
-		color: #353333;
-		font-size: 20px;
-		line-height: 30px;
-	}
-
-	/* Page Footer */
-	.pageFooter {
-		top: 600px;
-		position: relative;
-		width: auto;
-		left: 20%;
-	}
-
-	.logo {
-		height: 200px;
-		margin: 40px;
-		display: inline;
-		float: left;
-	}
-
-	.Lindsay {
-			color: #353333;
-			font-size: 60px;
-			font-family: 'Oswald', sans-serif;
-			text-align: left;
-			display: inline-block;
-			position: relative;
-			letter-spacing: 6px;
-			margin-bottom: 0;
-			margin-top: 45px;;
-		}
-
-	.contact {
-		font-family: 'Lato', sans-serif;
-		color: #353333;
-		font-size: 15px;
-		line-height: 30px;
-		letter-spacing: 2px;
-		margin: none;
-		display: block;
-		position: relative;
-		font-weight: lighter;
-		margin-top: 0;
-	}
-
-	/* Specifically on the 'Education' page */
-	#psychClasses {
-		font-family: 'Lato', sans-serif;
-		color: #353333;
-		font-size: 15px;
-		line-height: 30px;
-		letter-spacing: 2px;
-		font-weight: lighter;
-		position: static;
-		display: none;
-	}
-
-	#marketingClasses {
-			font-family: 'Lato', sans-serif;
-			color: #353333;
-			font-size: 15px;
-			line-height: 30px;
-			letter-spacing: 2px;
-			font-weight: lighter;
-			position: relative;
-			display: none;
-		}
-
-	#designClasses {
-		font-family: 'Lato', sans-serif;
-		color: #353333;
-		font-size: 15px;
-		line-height: 30px;
-		letter-spacing: 2px;
-		font-weight: lighter;
-		position: relative;
-		display: none;
 	}

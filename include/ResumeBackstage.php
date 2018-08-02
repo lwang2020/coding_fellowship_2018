@@ -32,28 +32,28 @@ function DisplayPage(){
 					</div>
 
 					<div id='psychClasses'>
-						<p style= 'font-weight: bold'> PHILOSOPHY-NEUROSCIENCE-PSYCHOLOGY CLASSES <p>
-						INTRODUCTION TO PSYCHOLOGY <br>
-						EXPERIMENTAL PSYCHOLOGY <br>
-						INTRODUCTION TO PSYCHOLOGICAL STATISTICS<br>
-						INTRODUCTION TO SOCIAL PSYCHOLOGY <br>
-						INTRODUCTION TO HUMAN EVOLUTION<br>
-						INTRODUCTION TO LINGUISTICS <br>
-						INTRODUCTION TO COGNITIVE SCIENCES<br>
-						ADVANCED EPISTEMOLOGY <br>
-						PHILOSOPHY OF LANGUAGE <br>
-						GREAT PHILOSOPHERS
+						<p style= 'font-weight: bold'> PHILOSOPHY-NEUROSCIENCE-PSYCHOLOGY CLASSES <p class='listedClasses'>
+						• INTRODUCTION TO PSYCHOLOGY <br>
+						• EXPERIMENTAL PSYCHOLOGY <br>
+						• INTRODUCTION TO PSYCHOLOGICAL STATISTICS<br>
+						• INTRODUCTION TO SOCIAL PSYCHOLOGY <br>
+						• INTRODUCTION TO HUMAN EVOLUTION<br>
+						• INTRODUCTION TO LINGUISTICS <br>
+						• INTRODUCTION TO COGNITIVE SCIENCES<br>
+						• ADVANCED EPISTEMOLOGY <br>
+						• PHILOSOPHY OF LANGUAGE <br>
+						• GREAT PHILOSOPHERS
 					</div>
 
 					<div id='marketingClasses'>
 						<p style= 'font-weight: bold'> MARKETING CLASSES <p>
-						PRINCIPLES OF MARKETING <br>
+						• PRINCIPLES OF MARKETING <br>
 					</div>
 
 					<div id='designClasses'>
 						<p style= 'font-weight: bold'> DESIGN CLASSES <p>
-						DESIGNING CREATIVITY: INNOVATION ACROSS DISCIPLINES <br>
-						DRAWING I
+						• DESIGNING CREATIVITY: INNOVATION ACROSS DISCIPLINES <br>
+						• DRAWING I
 					</div>",
 			'Javascript' =>"
 				<script>
@@ -88,10 +88,10 @@ function DisplayPage(){
 		",
 			'NavigationBar'=>
 				"
-					<a class='link' href='http://localhost:8888/ResumeHome.php'>HOME</a>
-					<a class='link' href='http://localhost:8888/ResumeStage.php?page=Leadership'>LEADERSHIP</a>
-					<a class='link' href='http://localhost:8888/ResumeStage.php?page=Experience'>EXPERIENCE</a>
-					<a class='link' href='http://localhost:8888/ResumeStage.php?page=Skills'>SKILLS</a>
+					<a class='link' href='http://lindsay.codingfellowship.com/ResumeHome.php'>HOME</a> &emsp; &emsp;
+					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Leadership'>LEADERSHIP</a> &emsp; &emsp;
+					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Experience'>EXPERIENCE</a> &emsp; &emsp;
+					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Skills'>SKILLS</a>
 				"
 		),
 
@@ -112,17 +112,22 @@ function DisplayPage(){
 						• Used Facebook, Instagram, Twitter, email and print media to
 						communicate to new students and promote event
 					</blockquote>
+					<p style= 'font-weight: bold'> VP of Content Creation - Unsung Heroes of WashU </p>
+						<blockquote>
+							• Lead photographer and videographer <br>
+							• Assists in interviews, fundraising, and community outreach <br>
+						</blockquote>
 				</div>
 
 			",
 			'NavigationBar'=>
 					"
-						<a class='link' href='http://localhost:8888/ResumeHome.php'>HOME</a>
-						<a class='link' href='http://localhost:8888/ResumeStage.php?page=Education'>EDUCATION</a>
-						<a class='link' href='http://localhost:8888/ResumeStage.php?page=Experience'>EXPERIENCE</a>
-						<a class='link' href='http://localhost:8888/ResumeStage.php?page=Skills'>SKILLS</a>
-					"
-				),
+						<a class='link' href='http://lindsay.codingfellowship.com/ResumeHome.php'>HOME</a> &emsp; &emsp;
+						<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Education'>EDUCATION</a> &emsp; &emsp;
+						<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Experience'>EXPERIENCE</a> &emsp; &emsp;
+						<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Skills'>SKILLS</a>
+					",
+				'Javascript' =>""),
 		'Experience'=>array(
 			'Header'=> "Experience",
 			'Title'=> "EXPERIENCE",
@@ -147,19 +152,20 @@ function DisplayPage(){
 			",
 			'NavigationBar'=>
 				"
-					<a class='link' href='http://localhost:8888/ResumeHome.php'>HOME</a>
-					<a class='link' href='http://localhost:8888/ResumeStage.php?page=Education'>EDUCATION</a>
-					<a class='link' href='http://localhost:8888/ResumeStage.php?page=Leadership'>LEADERSHIP</a>
-					<a class='link' href='http://localhost:8888/ResumeStage.php?page=Skills'>SKILLS</a>
-				"
-		),
+					<a class='link' href='http://lindsay.codingfellowship.com/ResumeHome.php'>HOME</a> &emsp; &emsp;
+					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Education'>EDUCATION</a> &emsp; &emsp;
+					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Leadership'>LEADERSHIP</a> &emsp; &emsp;
+					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Skills'>SKILLS</a>
+				",
+			'Javascript' =>""),
+
 		'Skills'=>array(
 			'Header'=> "Skills",
 			'Title'=> "SKILLS",
 			'Content'=>"
 					<p>
 						• Video editing, Microsoft Word, Powerpoint, Excel, Photoshop, Adobe Illustrator <br>
-						• Excellent at design and creative marketing <br>
+						• Excellent at design and creative marketing. Proficient in HTML, CSS, PHP, Javascript, and MySQL <br>
 						• Photographer <br>
 						• Fluent in Mandarin, proficient in French and Spanish <br>
 					</p>
@@ -167,11 +173,12 @@ function DisplayPage(){
 			",
 			'NavigationBar'=>
 				"
-					<a class='link' href='http://localhost:8888/ResumeHome.php'>HOME</a>
-					<a class='link' href='http://localhost:8888/ResumeStage.php?page=Education'>EDUCATION</a>
-					<a class='link' href='http://localhost:8888/ResumeStage.php?page=Leadership'>LEADERSHIP</a>
-					<a class='link' href='http://localhost:8888/ResumeStage.php?page=Experience'>EXPERIENCE</a>
+					<a class='link' href='http://lindsay.codingfellowship.com/ResumeHome.php'>HOME</a> &emsp; &emsp;
+					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Education'>EDUCATION</a> &emsp; &emsp;
+					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Leadership'>LEADERSHIP</a> &emsp; &emsp;
+					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Experience'>EXPERIENCE</a>
 				",
+				'Javascript' =>""
 		)
 	);
 }

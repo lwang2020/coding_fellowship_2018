@@ -12,19 +12,18 @@
 	</head>
 
 	<body>
-		<footer class='NavBar'>
-			<a class='linkToOtherPages' href='http://localhost:8888/ResumeStage.php?page=Education'>EDUCATION</a>
-			<a class='linkToOtherPages' href='http://localhost:8888/ResumeStage.php?page=Leadership'>LEADERSHIP</a>
-			<a class='linkToOtherPages' href='http://localhost:8888/ResumeStage.php?page=Experience'>EXPERIENCE</a>
-			<a class='linkToOtherPages' href='http://localhost:8888/ResumeStage.php?page=Skills'>SKILLS</a>
-		</footer>
-	</div>
+		<div id="splashscreen">
+			<div id="loadingCase">
+  			<div id="loadingJuice"></div>
+			</div>
+	    <img src="resumeSplashScreen.jpg" class='resumeSplashScreen'/>
+		</div>
 
 		<div id= 'entirePage'>
 				<div id= 'header'>
 					<object data="shelf1WorkExperience.svg" type="image/svg+xml" class='shelf' id='tippyTopShelf'></object>
 					<h1 class= 'HomePageHeader'>  LINDSAY WANG </h1>
-						<h2 class= 'HomePageSubHeader'> CLICK <a id="resumeDownloadLink" href="LindsayWangResumeDownload.pdf" target="_blank">HERE</a> FOR A DOWNLOADABLE PDF OF MY RESUME ON A SINGLE PAGE </h1>
+						<h2 class= 'HomePageSubHeader'> CLICK <a id="resumeDownloadLink" href="LindsayWangResumeDownload.pdf" target="_blank">HERE</a> FOR A DOWNLOADABLE PDF OF MY RESUMÉ ON A SINGLE PAGE </h1>
 				</div>
 
 		<div id= 'firstShelfContents'>
@@ -135,11 +134,11 @@
 			<img src= "succulent2.svg" id='succulent' class = 'object' onclick = "RunThroughBlurbs('ninthBlurb')">
 
 			<div id= '10' class = 'leafyPlantBlurb blurb'>
-				<p class = 'blurbTitle'> CLASS PRESIDENT </p>	<br>
+				<p class = 'blurbTitle'> VP OF CONTENT CREATION </p>	<br>
+				<p class = 'blurbSubtitle'> for the Unsung Heroes of WashU </p>
 					<ul>
-						•	Organized class fundraisers and social events, such as Empty Bowls (a fair that raised money for homeless shelters) <br>
-						•	Led executive board meetings of 6 other students <br>
-						•	Updated peers on upcoming event
+						• Lead photographer and videographer <br>
+						• Assists in interviews, fundraising, and community outreach <br>
 					</ul>
 				<button onclick = 'HideEverything()' class = 'Xout'> X </button>
 			</div>
@@ -1110,7 +1109,7 @@
 				<img src= "camera2.svg" id='camera' class = 'object' onclick = "RunThroughBlurbs('eleventhBlurb')">
 
 				<div id= '12' class = 'pencilsBlurb blurb'>
-					<p class = 'blurbSubtitle'><br> <br> Excellent at design and creative marketing </p>
+					<p class = 'blurbSubtitle'><br> <br> Excellent at design and creative marketing. Proficient in HTML, CSS, PHP, Javascript, and MySQL. </p>
 					<button onclick = 'HideEverything()' class = 'Xout'> &nbsp; X &nbsp; </button>
 				</div>
 				<img src= "pencils2.svg" id='pencils' class = 'object' onclick = "RunThroughBlurbs('twelfthBlurb')">
@@ -1140,13 +1139,38 @@
 				</div>
 				<img src= "desk1.svg" id= 'desk'>
 				<img src= "chair3.svg" id='chair'>
-
+				<footer id='homePageNavBar'>
+					<a class='linkToOtherPages' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Education'>EDUCATION</a>
+					<a class='linkToOtherPages' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Leadership'>LEADERSHIP</a>
+					<a class='linkToOtherPages' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Experience'>EXPERIENCE</a>
+					<a class='linkToOtherPages' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Skills'>SKILLS</a>
+				</footer>
 		</div>
+	</div>
 	</body>
+
 </html>
 
 <script src="jquery.js"></script>
 <script type = 'text/javascript'>
+
+	move();
+
+	function move() {
+	    var top = document.getElementById("loadingJuice");
+	    var width = 1;
+	    var id = setInterval(frame, 20);
+	    function frame() {
+	        if (width >= 100) {
+	            clearInterval(id);
+	        } else {
+	            width++;
+	            top.style.width = width + '%';
+	        }
+	    }
+	}
+
+	setTimeout(function(){ $( "#splashscreen" ).fadeOut( "slow"); }, 4000);
 
 	function HideEverything(){
 		$('.blurb').hide();
