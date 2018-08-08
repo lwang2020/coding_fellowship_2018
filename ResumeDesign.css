@@ -178,6 +178,12 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
+.mobileInstructions {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	display: none;
+}
+
 #resumeDownloadLink:link {
 	color:red
 }
@@ -570,9 +576,6 @@ ul {
 	z-index: 10;
 	display: inline-block;
 	position: relative;
-	animation: bounce 1s linear infinite;
-	animation-fill-mode: none;
-  animation-play-state: paused;
 }
 
 
@@ -580,16 +583,12 @@ ul {
 	z-index: 10;
 	display: inline-block;
 	position: relative;
-	animation: bounce 1s linear infinite;
-  animation-play-state: paused;
 }
 
 #ntd {
 	z-index: 10;
 	display: inline-block;
 	position: relative;
-	animation: bounce 1s linear infinite;
-  animation-play-state: paused;
 }
 
 #secondShelfContents {
@@ -607,32 +606,24 @@ ul {
 	z-index: 10;
 	display: inline-block;
 	position: relative;
-	animation: bounce 1s linear infinite;
-  animation-play-state: paused;
 }
 
 #trophy {
 	z-index: 10;
 	display: inline-block;
 	position: relative;
-	animation: bounce 1s linear infinite;
-  animation-play-state: paused;
 }
 
 #mountainLakes {
 	z-index: 10;
 	display: inline-block;
 	position: relative;
-	animation: bounce 1s linear infinite;
-  animation-play-state: paused;
 }
 
 #books {
 	z-index: 10;
 	display: inline-block;
 	position: relative;
-	animation: bounce 1s linear infinite;
-  animation-play-state: paused;
 }
 
 #thirdShelfContents {
@@ -650,24 +641,18 @@ ul {
 	z-index: 10;
 	display: inline-block;
 	position: relative;
-	animation: bounce 1s linear infinite;
-  animation-play-state: paused;
 }
 
 #succulent {
 	z-index: 10;
 	display: inline-block;
 	position: relative;
-	animation: bounce 1s linear infinite;
-  animation-play-state: paused;
 }
 
 #leafyPlant {
 	position: relative;
 	z-index: 10;
 	display:inline-block;
-	animation: bounce 1s linear infinite;
-  animation-play-state: paused;
 }
 
 #DeskDiv {
@@ -725,32 +710,24 @@ ul {
 	z-index: 11;
 	display: inline-block;
 	position: relative;
-	animation: bounce 1s linear infinite;
-  animation-play-state: paused;
 }
 
 #pencils {
 	z-index: 11;
 	display: inline-block;
 	position: relative;
-	animation: bounce 1s linear infinite;
-  animation-play-state: paused;
 }
 
 #macbook {
 	z-index: 11;
 	display: inline-block;
 	position: relative;
-	animation: bounce 1s linear infinite;
-  animation-play-state: paused;
 }
 
 #croissant {
 	z-index: 11;
 	display: inline-block;
 	position: relative;
-	animation: bounce 1s linear infinite;
-  animation-play-state: paused;
 }
 
 #contactDiv {
@@ -769,48 +746,17 @@ ul {
 }
 
 
-/* Animation */
+/* Objects grow when you hover over them */
 
 #lacrm:hover, #IxStyle:hover, #ntd:hover, #BaseballCap:hover, #trophy:hover, #mountainLakes:hover, #books:hover,
 #pearlPlant:hover, #succulent:hover, #leafyPlant:hover, #camera:hover, #pencils:hover, #macbook:hover, #croissant:hover {
-  /* Toggle our animation play state to running when we are hovering over our sticker */
-  animation-play-state: running;
-	}
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
-	@keyframes bounce {
-		  from,
-		  20%,
-		  53%,
-		  80%,
-		  to {
-		    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-		    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-		    -webkit-transform: translate3d(0, 0, 0);
-		    transform: translate3d(0, 0, 0);
-		  }
-
-		  40%,
-		  43% {
-		    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-		    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-		    -webkit-transform: translate3d(0, -30px, 0);
-		    transform: translate3d(0, -30px, 0);
-		  }
-
-		  70% {
-		    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-		    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-		    -webkit-transform: translate3d(0, -15px, 0);
-		    transform: translate3d(0, -15px, 0);
-		  }
-
-		  90% {
-		    -webkit-transform: translate3d(0, -4px, 0);
-		    transform: translate3d(0, -4px, 0);
-		  }
-	}
-
-	@keyframes draw {
+/* Portfolio drawing Animation */
+@keyframes draw {
 	  to {
 	    stroke-dashoffset: 0;
 	  }
@@ -1761,11 +1707,17 @@ ul {
 		font-size: 10px;
 	}
 	.HomePageHeader {
-		font-size: 80px;
+		font-size: 70px;
 		margin-top: 0px;
 	}
 	.HomePageSubHeader {
-		font-size: 15px;
+		display: none;
+	}
+	.mobileInstructions {
+		margin-top: 20%;
+		margin-left: 10%;
+		margin-right: 10%;
+		display: block;
 	}
 	#entirePage {
 		position: relative;
@@ -1784,7 +1736,7 @@ ul {
 			display: inline-block;
 		}
 		#tippyTopShelf {
-			top: 260px;
+			display:none;
 		}
 		#topShelf,
 		#middleShelf,
@@ -1846,12 +1798,12 @@ ul {
 		#succulent {
 			width: 50px;
 			margin-left: 2%;
-			top: -45px;
+			top: -30px;
 		}
 		#leafyPlant {
 			margin-left: 5%;
 			width: 25%;
-			top: -45px;
+			top: -30px;
 		}
 		#DeskDiv {
 			width: 100%;
@@ -1882,7 +1834,7 @@ ul {
 			display: none;
 		}
 		#desktop {
-			top: 40%;
+			top: 35%;
 			height: 20%;
 		}
 		#camera {
@@ -2081,31 +2033,87 @@ ul {
 			margin-left: 15px;
 			line-height: 20px;
 		}
+
 		.cameraBlurb{
-			font-size: 10px;
-			top: -60px;
-			width: 200px;
-			margin-left: -10px;
+			top: -20%;
+			margin-right: none;
+			margin-left: none;
+			width: 100%;
+			min-height: 80%;
+			height: auto;
+			z-index: 16;
+			background: white;
+			border: white 3px solid;
+			border-radius: 20px;
+			box-shadow: 0px 5px 5px gray;
+			position: absolute;
 		}
+
+		#photographyWebsiteButton {
+			height: 50%;
+		}
+
 		.pencilsBlurb {
-			top: -110%;
-			margin-left: -80px;
+			top: -20%;
+			margin-left: -25%;
+			width: 100%;
+			min-height: 80%;
+			height: auto;
+			z-index: 16;
+			background: white;
+			border: white 3px solid;
+			border-radius: 20px;
+			box-shadow: 0px 5px 5px gray;
+			position: absolute;
 		}
+
 		.macbookBlurb {
-			margin-left:2%;
-			top: -50px;
-			width: 200px;
+			top: -20%;
+			margin-left: -40%;
+			width: 100%;
+			min-height: 80%;
+			height: auto;
+			z-index: 16;
+			background: white;
+			border: white 3px solid;
+			border-radius: 20px;
+			box-shadow: 0px 5px 5px gray;
+			position: absolute;
 		}
 		.croissantBlurb {
-			margin-left: -20px;
-			top: -70px;
-			width: 100px;
+			top: -20%;
+			margin-left: -75%;
+			width: 100%;
+			min-height: 80%;
+			height: auto;
+			z-index: 16;
+			background: white;
+			border: white 3px solid;
+			border-radius: 20px;
+			box-shadow: 0px 5px 5px gray;
+			position: absolute;
+			text-align: left;
+		}
+		#contactDiv {
+			position: absolute;
+			display: block;
+			background-color: rgba(255, 255, 255, 0.57);
+			width:100%;
+			top: 130%;
+		}
+		#contactTitle {
+			display: block;
+			text-align: center;
+		}
+		#contactInfo {
+			display: block;
+			text-align: center;
 		}
 		#macbookBlurbSubtitle {
-			font-size: 10px;
+			font-size: 15px;
 			color:black;
 		}
 		#homePageNavBar {
-			bottom: -100px;
+			bottom: -120px;
 		}
 	}
