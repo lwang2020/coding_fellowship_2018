@@ -184,15 +184,15 @@
 	display: none;
 }
 
-#resumeDownloadLink:link {
+.topLinks:link {
 	color:red
 }
 
-#resumeDownloadLink:visited {
+.topLinks:visited {
 	color:red
 }
 
-#resumeDownloadLink:hover {
+.topLinks:hover {
 	color: #fc888d;
 }
 
