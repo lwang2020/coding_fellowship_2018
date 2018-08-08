@@ -8,7 +8,8 @@
 		<title>Lindsay Wang | Home</title>
 		<link rel='stylesheet' href='ResumeDesign.css' />
 		<link href="https://fonts.googleapis.com/css?family=Raleway|Josefin+Sans|Montserrat" rel="stylesheet">
-		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
 	</head>
 
 	<body style='background-color:#e5f0fc'>
@@ -21,13 +22,14 @@
 
 		<div id= 'entirePage'>
 				<div id= 'header'>
-					<object data="shelf1WorkExperience.svg" type="image/svg+xml" class='shelf' id='tippyTopShelf'></object>
+					<object data="InstructionShelf.svg" type="image/svg+xml" class='shelf' id='tippyTopShelf'></object>
 					<h1 class= 'HomePageHeader'>  LINDSAY WANG </h1>
-						<h2 class= 'HomePageSubHeader'> CLICK <a id="resumeDownloadLink" href="LindsayWangResumeDownload.pdf" target="_blank">HERE</a> FOR A DOWNLOADABLE PDF OF MY RESUMÉ ON A SINGLE PAGE </h1>
+						<h2 class= 'HomePageSubHeader'> CLICK <a id="resumeDownloadLink" href="LindsayWangResumeDownload.pdf" target="_blank">HERE</a> FOR A DOWNLOADABLE PDF OF MY RESUMÉ ON A SINGLE PAGE </h2>
+						<p class='mobileInstructions'> TOUCH EACH OBJECT TO LEARN MORE ABOUT ME </p>
 				</div>
 
 		<div id= 'firstShelfContents'>
-			<object data="shelf2Education.svg" type="image/svg+xml" class='shelf' id='topShelf'></object>
+			<object data="WorkExperienceShelf.svg" type="image/svg+xml" class='shelf' id='topShelf'></object>
 			<div id= '1' class = 'lacrmBlurb blurb'>
 				<p class = 'blurbTitle'> LESS ANNOYING CRM </p> <br>
 				<p class= 'blurbSubtitle'> Coding Fellow </p> <br>
@@ -64,7 +66,7 @@
 		</div>
 
 		<div id='secondShelfContents'>
-			<object data="shelf3LeadershipRoles.svg" type="image/svg+xml" class='shelf' id='middleShelf'></object>
+			<object data="EducationShelf.svg" type="image/svg+xml" class='shelf' id='middleShelf'></object>
 			<div id= '4' class = 'baseballCapBlurb blurb'>
 				<p class = 'blurbTitle'> WASHINGTON UNIVERSITY IN ST. LOUIS </p> <br>
 				<p class = 'blurbSubtitle'> Junior </p> <br>
@@ -106,7 +108,7 @@
 		</div>
 
 		<div id='thirdShelfContents'>
-			<object data="shelf4Skills.svg" type="image/svg+xml" class='shelf' id='bottomShelf'></object>
+			<object data="LeadershipRoles.svg" type="image/svg+xml" class='shelf' id='bottomShelf'></object>
 			<div id= '8' class = 'pearlPlantBlurb blurb'>
 				<p class = 'blurbTitle'> DIRECTOR OF MARKETING </p> <br>
 				<p class = 'blurbSubtitle'>	for the Washington University Amateurs A Cappella </p> <br>
@@ -1135,7 +1137,8 @@
 						&nbsp; St. Louis MO 63105 <br>
 					</p>
 				</div>
-				<img src= "desk1.svg" id= 'desk'>
+				<object data="SkillsDesk.svg" type="image/svg+xml" id='desk'></object>
+		<!--		<img src= "SkillsDesk.svg" id= 'desk'> -->
 				<img src= "chair3.svg" id='chair'>
 				<footer id='homePageNavBar'>
 					<p> a slightly less interesting way to navigate : </p> <br>
