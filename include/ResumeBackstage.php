@@ -88,7 +88,7 @@ function DisplayPage(){
 		",
 			'NavigationBar'=>
 				"
-					<a class='link' href='http://lindsay.codingfellowship.com/index.php'>HOME</a> &emsp; &emsp;
+					<a class='link' href='http://lindsay.codingfellowship.com/'>HOME</a> &emsp; &emsp;
 					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Leadership'>LEADERSHIP</a> &emsp; &emsp;
 					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Experience'>EXPERIENCE</a> &emsp; &emsp;
 					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Skills'>SKILLS</a>
@@ -122,7 +122,7 @@ function DisplayPage(){
 			",
 			'NavigationBar'=>
 					"
-						<a class='link' href='http://lindsay.codingfellowship.com/index.php'>HOME</a> &emsp; &emsp;
+						<a class='link' href='http://lindsay.codingfellowship.com/'>HOME</a> &emsp; &emsp;
 						<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Education'>EDUCATION</a> &emsp; &emsp;
 						<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Experience'>EXPERIENCE</a> &emsp; &emsp;
 						<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Skills'>SKILLS</a>
@@ -134,7 +134,7 @@ function DisplayPage(){
 			'Content'=>"
 				<p style= 'font-weight: bold'> Less Annoying CRM - Coding Fellow </p>
 					<blockquote>
-						• Learned CSS, HTML, MySQL, PHP, and Javascript <br>
+						• Learned CSS, HTML, SQL, PHP, and Javascript <br>
 						• Learned how to implement web development skills to design websites
 					</blockquote>
 				<p style= 'font-weight: bold'> Ix Style - Marketing/PR Intern </p>
@@ -152,7 +152,7 @@ function DisplayPage(){
 			",
 			'NavigationBar'=>
 				"
-					<a class='link' href='http://lindsay.codingfellowship.com/index.php'>HOME</a> &emsp; &emsp;
+					<a class='link' href='http://lindsay.codingfellowship.com/'>HOME</a> &emsp; &emsp;
 					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Education'>EDUCATION</a> &emsp; &emsp;
 					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Leadership'>LEADERSHIP</a> &emsp; &emsp;
 					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Skills'>SKILLS</a>
@@ -166,7 +166,8 @@ function DisplayPage(){
 					<p>
 						• Video editing, Microsoft Word, Powerpoint, Excel, Photoshop, Adobe Illustrator <br>
 						• Excellent at design and creative marketing <br>
-						• Proficient in HTML, CSS, PHP, Javascript, and MySQL <br>
+						• Proficient in HTML, CSS, PHP, Javascript, and SQL <br>
+						• Adept at managing social media across a variety of platforms <br>
 						• Photographer <br>
 						• Fluent in Mandarin, proficient in French and Spanish <br>
 					</p>
@@ -174,7 +175,7 @@ function DisplayPage(){
 			",
 			'NavigationBar'=>
 				"
-					<a class='link' href='http://lindsay.codingfellowship.com/index.php'>HOME</a> &emsp; &emsp;
+					<a class='link' href='http://lindsay.codingfellowship.com/'>HOME</a> &emsp; &emsp;
 					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Education'>EDUCATION</a> &emsp; &emsp;
 					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Leadership'>LEADERSHIP</a> &emsp; &emsp;
 					<a class='link' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Experience'>EXPERIENCE</a>
