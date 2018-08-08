@@ -24,7 +24,7 @@
 				<div id= 'header'>
 					<object data="InstructionShelf.svg" type="image/svg+xml" class='shelf' id='tippyTopShelf'></object>
 					<h1 class= 'HomePageHeader'>  LINDSAY WANG </h1>
-						<p class= 'HomePageSubHeader'> CLICK <a class="topLinks" href="LindsayWangResumeDownload.pdf" target="_blank">HERE</a> FOR A DOWNLOADABLE PDF OF MY RESUMÉ ON A SINGLE PAGE. <br>
+						<p class= 'HomePageSubHeader'> CLICK <a class="topLinks" href="LindsayWangResume.pdf" target="_blank">HERE</a> FOR A DOWNLOADABLE PDF OF MY RESUMÉ ON A SINGLE PAGE. <br>
 							CLICK <a class ='topLinks' href="https://www.linkedin.com/in/lindsay-wang-646099143/" target="_blank">HERE</a> FOR MY LINKEDIN. </p>
 
 						<p class='mobileInstructions'> TOUCH EACH OBJECT TO LEARN MORE ABOUT ME </p>
@@ -36,7 +36,7 @@
 				<p class = 'blurbTitle'> LESS ANNOYING CRM </p> <br>
 				<p class= 'blurbSubtitle'> Coding Fellow </p> <br>
 				<ul>
-					• Learned CSS, HTML, MySQL, PHP, and Javascript <br>
+					• Learned CSS, HTML, SQL, PHP, and Javascript <br>
 					• Learned how to implement web development skills to design websites
 				</ul>
 				<button onclick = 'HideEverything()' class = 'Xout'> X </button>
@@ -1111,19 +1111,22 @@
 				<img src= "camera2.svg" id='camera' class = 'object' onclick = "RunThroughBlurbs('eleventhBlurb')">
 
 				<div id= '12' class = 'pencilsBlurb blurb'>
-					<p class = 'blurbSubtitle'><br> <br> Excellent at design and creative marketing. Proficient in HTML, CSS, PHP, Javascript, and MySQL. </p>
+					<p class = 'blurbTitle'> ARTIST </p>
+					<p class = 'blurbSubtitle'> <br> Excellent at design and creative marketing, including social media. </p>
 					<button onclick = 'HideEverything()' class = 'Xout'> &nbsp; X &nbsp; </button>
 				</div>
 				<img src= "pencils2.svg" id='pencils' class = 'object' onclick = "RunThroughBlurbs('twelfthBlurb')">
 
 				<div id= '13' class = 'macbookBlurb blurb'>
-					<p class = 'blurbSubtitle' id= 'macbookBlurbSubtitle'><br> <br> <br> Video editing, Microsoft Word, Powerpoint, Excel, Photoshop, Adobe Illustrator </p>
-					<button onclick = 'HideEverything()' class = 'Xout'> &nbsp; X &nbsp; </button>
+					<p class = 'blurbTitle' id= 'macbookBlurbTitle'> <br> COMPUTER SKILLS  </p>
+					<p class = 'blurbSubtitle' id= 'macbookBlurbSubtitle'> <br> Proficient in HTML, CSS, PHP, Javascript, SQL, video editing, Microsoft Word, Powerpoint, Excel, Photoshop, Adobe Illustrator, and managing various social media platforms. </p>
+					<button onclick = 'HideEverything()'  id= 'macbookXOut'> &nbsp; X &nbsp; </button>
 				</div>
 				<img src= "macbook3.svg" id='macbook' class = 'object' onclick = "RunThroughBlurbs('thirteenthBlurb')">
 
 				<div id= '14' class = 'croissantBlurb blurb'>
-					<p class = 'blurbSubtitle' style= 'text-align: right'><br><br> Fluent in Mandarin, proficient in French and Spanish <p>
+					<p class = 'blurbTitle' id= 'croissantBlurbTitle'> LANGUAGES </p>
+					<p class = 'blurbSubtitle' id= 'croissantBlurbSubtitle'> <br> Fluent in Mandarin, proficient in French and Spanish <p>
 					<button onclick = 'HideEverything()' class = 'Xout'> &nbsp; X &nbsp; </button>
 				</div>
 				<img src= "croissant2.svg" id='croissant' class = 'object' onclick = "RunThroughBlurbs('fourteenthBlurb')">
