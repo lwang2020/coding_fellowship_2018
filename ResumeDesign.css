@@ -1984,6 +1984,7 @@ ul {
 			margin: none;
 			margin-right: none;
 			margin-left: 7%;
+			top: -100px;
 		}
 		.succulentBlurb {
 			min-height: 80%;
@@ -1998,6 +1999,7 @@ ul {
 			margin: none;
 			margin-right: none;
 			margin-left: -130px;
+			top: -100px;
 		}
 		.leafyPlantBlurb {
 			min-height: 80%;
