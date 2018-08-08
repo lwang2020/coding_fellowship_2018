@@ -24,7 +24,9 @@
 				<div id= 'header'>
 					<object data="InstructionShelf.svg" type="image/svg+xml" class='shelf' id='tippyTopShelf'></object>
 					<h1 class= 'HomePageHeader'>  LINDSAY WANG </h1>
-						<h2 class= 'HomePageSubHeader'> CLICK <a id="resumeDownloadLink" href="LindsayWangResumeDownload.pdf" target="_blank">HERE</a> FOR A DOWNLOADABLE PDF OF MY RESUMÉ ON A SINGLE PAGE </h2>
+						<p class= 'HomePageSubHeader'> CLICK <a class="topLinks" href="LindsayWangResumeDownload.pdf" target="_blank">HERE</a> FOR A DOWNLOADABLE PDF OF MY RESUMÉ ON A SINGLE PAGE. <br>
+							CLICK <a class ='topLinks' href="https://www.linkedin.com/in/lindsay-wang-646099143/" target="_blank">HERE</a> FOR MY LINKEDIN. </p>
+
 						<p class='mobileInstructions'> TOUCH EACH OBJECT TO LEARN MORE ABOUT ME </p>
 				</div>
 
