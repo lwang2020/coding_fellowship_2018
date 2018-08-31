@@ -24,7 +24,7 @@
 				<div id= 'header'>
 					<object data="InstructionShelf.svg" type="image/svg+xml" class='shelf' id='tippyTopShelf'></object>
 					<h1 class= 'HomePageHeader'>  LINDSAY WANG </h1>
-						<p class= 'HomePageSubHeader'> CLICK <a class="topLinks" href="LindsayWangResume.pdf" target="_blank">HERE</a> FOR A DOWNLOADABLE PDF OF MY RESUMÉ ON A SINGLE PAGE. <br>
+						<p class= 'HomePageSubHeader'> CLICK <a class="topLinks" href="WangLindsayResume.pdf" target="_blank">HERE</a> FOR A DOWNLOADABLE PDF OF MY RESUMÉ ON A SINGLE PAGE. <br>
 							CLICK <a class ='topLinks' href="https://www.linkedin.com/in/lindsay-wang-646099143/" target="_blank">HERE</a> FOR MY LINKEDIN. </p>
 
 						<p class='mobileInstructions'> TOUCH EACH OBJECT TO LEARN MORE ABOUT ME </p>
@@ -34,7 +34,7 @@
 			<object data="WorkExperienceShelf.svg" type="image/svg+xml" class='shelf' id='topShelf'></object>
 			<div id= '1' class = 'lacrmBlurb blurb'>
 				<p class = 'blurbTitle'> LESS ANNOYING CRM </p> <br>
-				<p class= 'blurbSubtitle'> Coding Fellow </p> <br>
+				<p class= 'blurbSubtitle'> Coding Fellow <br> 2018 </p> <br>
 				<ul>
 					• Learned CSS, HTML, SQL, PHP, and Javascript <br>
 					• Learned how to implement web development skills to design websites
@@ -45,7 +45,7 @@
 
 			<div id= '2' class = 'ixStyleBlurb blurb'>
 				<p class = 'blurbTitle'> IX STYLE </p> <br>
-				<p class = 'blurbSubtitle'> Marketing and PR Intern </p> <br>
+				<p class = 'blurbSubtitle'> Marketing and PR Intern <br> 2017 </p> <br>
 				<ul>
 					• In charge of contacting media publications and editors for fashion feature requests <br>
 					• Reorganized customer service system to make it more user-friendly <br>
@@ -57,7 +57,7 @@
 
 			<div id= '3' class = 'ntdBlurb blurb'>
 				<p class = 'blurbTitle'> NEW TANG DYNASTY TELEVISION </p> <br>
-				<p class = 'blurbSubtitle'> Intern </p> <br>
+				<p class = 'blurbSubtitle'> Intern <br> 2014 </p> <br>
 					<ul>
 						• Researched and published original articles <br>
 						• Worked collaboratively to edit newspaper articles before publication
@@ -113,7 +113,7 @@
 			<object data="LeadershipRoles.svg" type="image/svg+xml" class='shelf' id='bottomShelf'></object>
 			<div id= '8' class = 'pearlPlantBlurb blurb'>
 				<p class = 'blurbTitle'> DIRECTOR OF MARKETING </p> <br>
-				<p class = 'blurbSubtitle'>	for the Washington University Amateurs A Cappella </p> <br>
+				<p class = 'blurbSubtitle'>	for the Washington University Amateurs A Cappella <br> (2018 - present) </p> <br>
 					<ul>
 						• In charge of marketing and PR, including social media and designing print media <br>
 						• Delegates and handles responsibilities given by the Group Coordinator <br>
@@ -125,7 +125,7 @@
 
 			<div id= '9' class = 'succulentBlurb blurb'>
 				<p class = 'blurbTitle'> SOCIAL MEDIA COORDINATOR </p>
-				<p class = 'blurbSubtitle'> for the Washington University A Cappella Advisory Council (ACAC) </p> <br>
+				<p class = 'blurbSubtitle'> for the Washington University A Cappella Advisory Council <br> (2017-2018) </p> <br>
 					<ul>
 						• Established executive decisions on events for the WashU a cappella community, including We Sing for Ice Cream and auditions <br>
 						• Designed advertisements and social media posters <br>
@@ -137,7 +137,7 @@
 
 			<div id= '10' class = 'leafyPlantBlurb blurb'>
 				<p class = 'blurbTitle'> VP OF CONTENT CREATION </p>	<br>
-				<p class = 'blurbSubtitle'> for the Unsung Heroes of WashU </p>
+				<p class = 'blurbSubtitle'> for the Unsung Heroes of WashU <br> (2017 - present) </p> <br>
 					<ul>
 						• Lead photographer and videographer <br>
 						• Assists in interviews, fundraising, and community outreach <br>
@@ -1138,8 +1138,8 @@
 						EMAIL: <br> <br>
 						lindsay.wang@wustl.edu <br> <br> <br>
 						&nbsp; ADDRESS: <br> <br>
-						&nbsp; 6515 Wydown Blvd, <br>
-						&nbsp; St. Louis MO 63105 <br>
+						&nbsp; 6300 Enright Ave, <br>
+						&nbsp; St. Louis, MO 63130 <br>
 					</p>
 				</div>
 				<object data="SkillsDesk.svg" type="image/svg+xml" id='desk'></object>

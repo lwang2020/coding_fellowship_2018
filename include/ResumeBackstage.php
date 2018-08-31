@@ -48,12 +48,17 @@ function DisplayPage(){
 					<div id='marketingClasses'>
 						<p style= 'font-weight: bold'> MARKETING CLASSES <p>
 						• PRINCIPLES OF MARKETING <br>
+						• CONSUMER BEHAVIOR <br>
+						• INTRODUCTION TO MICROECONOMICS <br>
+						• CALCULUS III <br>
+						• MANAGERIAL STATISTICS I
 					</div>
 
 					<div id='designClasses'>
 						<p style= 'font-weight: bold'> DESIGN CLASSES <p>
 						• DESIGNING CREATIVITY: INNOVATION ACROSS DISCIPLINES <br>
-						• DRAWING I
+						• DRAWING I <br>
+						• 2-D DESIGN
 					</div>",
 			'Javascript' =>"
 				<script>
