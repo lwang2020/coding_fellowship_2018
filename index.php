@@ -13,7 +13,7 @@
 	</head>
 
 	<body style='background-color:#e5f0fc'>
-		<div id="splashscreen">
+ 		<div id="splashscreen">
 			<div id="loadingCase">
   			<div id="loadingJuice"></div>
 			</div>
@@ -24,8 +24,9 @@
 				<div id= 'header'>
 					<object data="InstructionShelf.svg" type="image/svg+xml" class='shelf' id='tippyTopShelf'></object>
 					<h1 class= 'HomePageHeader'>  LINDSAY WANG </h1>
-						<p class= 'HomePageSubHeader'> CLICK <a class="topLinks" href="WangLindsayResume.pdf" target="_blank">HERE</a> FOR A DOWNLOADABLE PDF OF MY RESUMÉ ON A SINGLE PAGE. <br>
-							CLICK <a class ='topLinks' href="https://www.linkedin.com/in/lindsay-wang-646099143/" target="_blank">HERE</a> FOR MY LINKEDIN. </p>
+						<p class= 'HomePageSubHeader'>
+							Welcome! I drew everything you see using Adobe Illustrator and Photoshop, and coded this entire website from scratch using HTML, PHP, Javascript, and CSS. <br> <br>
+							Click <a class="topLinks" href="WangLindsayResume.pdf" target="_blank">here</a> for a downloadable PDF of my resume. Click <a class ='topLinks' href="https://www.linkedin.com/in/lindsay-wang-646099143/" target="_blank">here</a> for my LinkedIn. </p>
 
 						<p class='mobileInstructions'> TOUCH EACH OBJECT TO LEARN MORE ABOUT ME </p>
 				</div>
@@ -37,7 +38,8 @@
 				<p class= 'blurbSubtitle'> Coding Fellow <br> 2018 </p> <br>
 				<ul>
 					• Learned CSS, HTML, SQL, PHP, and Javascript <br>
-					• Learned how to implement web development skills to design websites
+					• Learned how to implement web development skills to design websites <br>
+					• Oversaw management and project timelines for final coding project
 				</ul>
 				<button onclick = 'HideEverything()' class = 'Xout'> X </button>
 			</div>
@@ -55,16 +57,17 @@
 			</div>
 			<img src= 'IxStyle3.svg' id= 'IxStyle' class = 'object' onclick = "RunThroughBlurbs('secondBlurb')">
 
-			<div id= '3' class = 'ntdBlurb blurb'>
-				<p class = 'blurbTitle'> NEW TANG DYNASTY TELEVISION </p> <br>
-				<p class = 'blurbSubtitle'> Intern <br> 2014 </p> <br>
+			<div id= '3' class = 'morningstarBlurb blurb'>
+				<p class = 'blurbTitle'> MORNINGSTAR, INC </p> <br>
+				<p class = 'blurbSubtitle'> Data Visualization Intern <br> 2019 </p> <br>
 					<ul>
-						• Researched and published original articles <br>
-						• Worked collaboratively to edit newspaper articles before publication
+						• Worked with a team to visualize a variety of data into dynamic graphs <br>
+						• Used Adobe Illustrator, SQL, and Javascript to create data viz prototypes <br>
+						• Led team meetings to provide business solutions to Morningstar on a case study
 					</ul>
 				<button onclick = 'HideEverything()' class= 'Xout'> X</button>
 			</div>
-			<img src= "ntd2.svg" id= 'ntd' class = 'object' onclick = "RunThroughBlurbs('thirdBlurb')">
+			<img src= "morningstar.svg" id= 'morningstar' class = 'object' onclick = "RunThroughBlurbs('thirdBlurb')">
 		</div>
 
 		<div id='secondShelfContents'>
@@ -84,8 +87,8 @@
 			<div id= '5' class = 'trophyBlurb blurb'>
 				<p class = 'blurbTitle'> HONORS </p> <br>
 					<ul>
-						• Dean's List (Fall 2016, Spring 2017, Spring 2018) <br>
-						• GPA: 3.77/4.00 <br>
+						• Dean's List (Fall 2016, Spring 2017, Spring 2018, Fall 2018) <br>
+						• GPA: 3.73/4.00 <br>
 						• John B. Ervin Scholarship (full merit scholarship to Washington University in St. Louis)<p>
 					</ul>
 				<button onclick = 'HideEverything()' class = 'Xout'> X </button>
@@ -1119,7 +1122,7 @@
 
 				<div id= '13' class = 'macbookBlurb blurb'>
 					<p class = 'blurbTitle' id= 'macbookBlurbTitle'> <br> COMPUTER SKILLS  </p>
-					<p class = 'blurbSubtitle' id= 'macbookBlurbSubtitle'> <br> Proficient in HTML, CSS, PHP, Javascript, SQL, video editing, Microsoft Word, Powerpoint, Excel, Photoshop, Adobe Illustrator, and managing various social media platforms. </p>
+					<p class = 'blurbSubtitle' id= 'macbookBlurbSubtitle'> <br> Proficient in HTML, CSS, PHP, Javascript, SQL, video editing, Microsoft Word, Powerpoint, Excel, Adobe Creative Suite, and managing various social media platforms. </p>
 					<button onclick = 'HideEverything()'  id= 'macbookXOut'> &nbsp; X &nbsp; </button>
 				</div>
 				<img src= "macbook3.svg" id='macbook' class = 'object' onclick = "RunThroughBlurbs('thirteenthBlurb')">
@@ -1138,15 +1141,16 @@
 						EMAIL: <br> <br>
 						lindsay.wang@wustl.edu <br> <br> <br>
 						&nbsp; ADDRESS: <br> <br>
-						&nbsp; 6300 Enright Ave, <br>
-						&nbsp; St. Louis, MO 63130 <br>
+						&nbsp;Apartment 1W <br>
+						&nbsp;6639 University Drive <br>
+						&nbsp;St. Louis, MO 63130 <br>
 					</p>
 				</div>
 				<object data="SkillsDesk.svg" type="image/svg+xml" id='desk'></object>
 		<!--		<img src= "SkillsDesk.svg" id= 'desk'> -->
 				<img src= "chair3.svg" id='chair'>
 				<footer id='homePageNavBar'>
-					<p> a slightly less interesting way to navigate : </p> <br>
+					<p> A slightly less interesting way to navigate : </p> <br>
 					<a class='linkToOtherPages' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Education'>EDUCATION</a>
 					<a class='linkToOtherPages' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Leadership'>LEADERSHIP</a>
 					<a class='linkToOtherPages' href='http://lindsay.codingfellowship.com/ResumeStage.php?page=Experience'>EXPERIENCE</a>
