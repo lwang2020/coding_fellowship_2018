@@ -354,7 +354,7 @@ ul {
 	top: -30px;
 }
 
-.ntdBlurb {
+.morningstarBlurb {
 	min-height: 80%;
 	height: auto;
 	width: 30%;
@@ -614,7 +614,7 @@ ul {
 	position: relative;
 }
 
-#ntd {
+#morningstar {
 	z-index: 10;
 	display: inline-block;
 	position: relative;
@@ -777,7 +777,7 @@ ul {
 
 /* Objects grow when you hover over them */
 
-#lacrm:hover, #IxStyle:hover, #ntd:hover, #BaseballCap:hover, #trophy:hover, #mountainLakes:hover, #books:hover,
+#lacrm:hover, #IxStyle:hover, #morningstar:hover, #BaseballCap:hover, #trophy:hover, #mountainLakes:hover, #books:hover,
 #pearlPlant:hover, #succulent:hover, #leafyPlant:hover, #camera:hover, #pencils:hover, #macbook:hover, #croissant:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -842,7 +842,7 @@ ul {
 		margin-right: 100px;
 		margin-left: 100px;
 	}
-	#ntd {
+	#morningstar {
 		width: 210px;
 		top: 25px;
 		margin-left: 10px;
@@ -1006,7 +1006,7 @@ ul {
 		margin-right: 50px;
 		margin-left: 50px;
 	}
-	#ntd {
+	#morningstar {
 		width: 20%;
 		top: 50px;
 		margin-left: 5%;
@@ -1183,7 +1183,7 @@ ul {
 		margin-right: 50px;
 		margin-left: 50px;
 	}
-	#ntd {
+	#morningstar {
 		width: 20%;
 		top: 30%;
 		margin-left: 4%;
@@ -1382,7 +1382,7 @@ ul {
 		margin-right: 50px;
 		margin-left: 20px;
 	}
-	#ntd {
+	#morningstar {
 		width: 20%;
 		top: 34%;
 		margin-left: 2%;
@@ -1603,7 +1603,7 @@ ul {
 		margin-right: 20px;
 		margin-left: 20px;
 	}
-	#ntd {
+	#morningstar {
 		width: 120px;
 		top:100px;
 		margin-left: 10px;
@@ -1856,7 +1856,7 @@ ul {
 			margin-right: none;
 			margin-left: none;
 		}
-		#ntd {
+		#morningstar {
 			width: 25%;
 			top: 20%;
 			margin-left: none;
@@ -1993,7 +1993,7 @@ ul {
 			margin-right: none;
 			margin-left: -100px;
 		}
-		.ntdBlurb {
+		.morningstarBlurb {
 			min-height: 80%;
 			height: auto;
 			width: 80%;
