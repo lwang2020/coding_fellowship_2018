@@ -25,7 +25,7 @@ echo "
 		<div class = 'pageFooter'>
 			<img src = 'LW.svg' alt = 'LW logo' class = 'logo'>
 			<p class = 'Lindsay'> LINDSAY WANG </p>
-			<p class = 'contact'> (973) 874 - 5591  • <i> LINDSAY.WANG@WUSTL.EDU </i>  <br> 6300 ENRIGHT AVE, ST. LOUIS, MO 63130 </p>
+			<p class = 'contact'> (973) 874 - 5591  • <i> LINDSAY.WANG@WUSTL.EDU </i>  <br> APT 1W, 6639 UNIVERSITY DRIVE, ST. LOUIS, MO 63130 </p>
 		</div>
 
 		".$DisplayPage[$_REQUEST['page']]['Javascript']."
