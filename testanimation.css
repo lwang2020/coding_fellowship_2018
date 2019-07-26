@@ -1,0 +1,86 @@
+
+/* self drawing animation test */
+svg {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+
+path {
+    fill-opacity: 0;
+		fill: none;
+    stroke: #000;
+    stroke-width: 2;
+    stroke-dasharray: 2400;
+    stroke-dashoffset: 2400;
+    animation: draw 5s 1 linear;
+  }
+
+
+#portfolio {
+	z-index: 2;
+	position: absolute;
+	visibility: visible;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/*test test!*/
+
+
+
+.sticker {
+  width:200px;
+  height:200px;
+  position:absolute;
+  animation: bounce 1s linear infinite;
+  /*Set our animation play state to paused initially */
+  animation-play-state: paused;
+}
+
+.sticker:hover {
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+  animation-play-state: running;
+}
+
+@keyframes bounce {
+	  from,
+	  20%,
+	  53%,
+	  80%,
+	  to {
+	    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	    -webkit-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0);
+	  }
+
+	  40%,
+	  43% {
+	    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    -webkit-transform: translate3d(0, -30px, 0);
+	    transform: translate3d(0, -30px, 0);
+	  }
+
+	  70% {
+	    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+	    -webkit-transform: translate3d(0, -15px, 0);
+	    transform: translate3d(0, -15px, 0);
+	  }
+
+	  90% {
+	    -webkit-transform: translate3d(0, -4px, 0);
+	    transform: translate3d(0, -4px, 0);
+	  }
